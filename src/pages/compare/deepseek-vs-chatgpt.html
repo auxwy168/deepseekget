@@ -3,23 +3,26 @@
 <meta name="description" content="从推理能力、代码、写作、价格、中文支持等9个维度实测对比DeepSeek和ChatGPT。">
 <meta name="keywords" content="deepseek和chatgpt区别,deepseek vs chatgpt,AI大模型对比">
 <link rel="canonical" href="https://deepseekget.com/compare/deepseek-vs-chatgpt/">
-<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans-serif;background:#F8FAFC;color:#1E293B;line-height:1.85}.c{max-width:860px;margin:0 auto;padding:20px}.nav{padding:16px 0;border-bottom:1px solid #E5E7EB;margin-bottom:24px}.nav a{color:#4F46E5;font-weight:700;font-size:18px;text-decoration:none}.bc{font-size:13px;color:#9CA3AF;margin-bottom:20px}.bc a{color:#4F46E5;text-decoration:none}.tag{display:inline-block;background:#FFFBEB;color:#F59E0B;padding:4px 12px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:12px}h1{font-size:1.9em;font-weight:800;color:#1F2937;margin:12px 0}.meta{font-size:13px;color:#9CA3AF;margin-bottom:28px}h2{font-size:1.25em;font-weight:700;margin:36px 0 14px;padding-left:12px;border-left:4px solid #4F46E5}p{margin-bottom:16px;color:#4B5563;font-size:16px}ul{padding-left:24px;margin:12px 0}li{margin-bottom:8px}a{color:#4F46E5}strong{color:#1F2937}table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}th{background:#4F46E5;color:#fff;padding:10px 14px;text-align:left}td{padding:10px 14px;border-bottom:1px solid #E5E7EB}.cta{background:linear-gradient(135deg,#312E81,#4F46E5);color:#fff;padding:24px 28px;border-radius:12px;margin:24px 0;text-align:center}.cta h3{color:#fff;margin-bottom:8px}.cta .btn{display:inline-block;background:#fff;color:#4F46E5;padding:10px 28px;border-radius:8px;font-weight:700;text-decoration:none}.rel{margin-top:40px;padding-top:30px;border-top:1px solid #E5E7EB}.rel h2{font-size:1.15em;border:none;padding:0;margin-bottom:16px}.rel-g{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rel-c{background:#fff;border:1px solid #E5E7EB;border-radius:8px;padding:14px 16px;text-decoration:none;color:#1F2937;font-size:14px}.rel-c:hover{border-color:#4F46E5}.footer .c{max-width:1100px;margin:0 auto}.footer-brand h3{color:#fff;font-size:18px;margin-bottom:6px}.footer-brand .footer-bottom a:hover{color:rgba(255,255,255,.8)}@media(max-width:768px){}@media(max-width:480px){}
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans-serif;background:#F8FAFC;color:#1E293B;line-height:1.85}.c{max-width:860px;margin:0 auto;padding:20px}.nav{padding:16px 0;border-bottom:1px solid #E5E7EB;margin-bottom:24px}.nav a{color:#4F46E5;font-weight:700;font-size:18px;text-decoration:none}.bc{font-size:13px;color:#9CA3AF;margin-bottom:20px}.bc a{color:#4F46E5;text-decoration:none}.tag{display:inline-block;background:#FFFBEB;color:#F59E0B;padding:4px 12px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:12px}h1{font-size:1.9em;font-weight:800;color:#1F2937;margin:12px 0}.meta{font-size:13px;color:#9CA3AF;margin-bottom:28px}h2{font-size:1.25em;font-weight:700;margin:36px 0 14px;padding-left:12px;border-left:4px solid #4F46E5}p{margin-bottom:16px;color:#4B5563;font-size:16px}ul{padding-left:24px;margin:12px 0}li{margin-bottom:8px}a{color:#4F46E5}strong{color:#1F2937}table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}th{background:#4F46E5;color:#fff;padding:10px 14px;text-align:left}td{padding:10px 14px;border-bottom:1px solid #E5E7EB}.cta{background:linear-gradient(135deg,#312E81,#4F46E5);color:#fff;padding:24px 28px;border-radius:12px;margin:24px 0;text-align:center}.cta h3{color:#fff;margin-bottom:8px}.cta .btn{display:inline-block;background:#fff;color:#4F46E5;padding:10px 28px;border-radius:8px;font-weight:700;text-decoration:none}.rel{margin-top:40px;padding-top:30px;border-top:1px solid #E5E7EB}.rel h2{font-size:1.15em;border:none;padding:0;margin-bottom:16px}.rel-g{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rel-c{background:#fff;border:1px solid #E5E7EB;border-radius:8px;padding:14px 16px;text-decoration:none;color:#1F2937;font-size:14px}.rel-c:hover{border-color:#4F46E5}@media(max-width:768px){}@media(max-width:480px){}
+
+
 /* Footer */
-.footer{background:#1E1B4B;color:rgba(255,255,255,.7);padding:48px 20px 0;font-size:14px;line-height:2}
+.footer{background:#fff;color:#4B5563;padding:48px 20px 24px;font-size:14px;line-height:2;border-top:1px solid #E5E7EB}
 .footer .c{max-width:1100px;margin:0 auto}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1)}
-.footer-brand h3{color:#fff;font-size:18px;margin-bottom:6px}
-.footer-brand .logo-row{display:flex;align-items:center;gap:6px;margin-bottom:12px}
-.footer-desc{font-size:13px;line-height:1.8;color:rgba(255,255,255,.5);margin-bottom:16px;max-width:280px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:40px;padding-bottom:32px;border-bottom:1px solid #F3F4F6}
+.footer-brand .logo-row{display:flex;align-items:center;gap:6px;margin-bottom:10px}
+.footer-desc{font-size:13px;line-height:1.8;color:#9CA3AF;margin-bottom:16px;max-width:280px}
 .social-icons{display:flex;gap:10px}
-.social-icon{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;transition:all .2s}
-.social-icon:hover{background:var(--blue);transform:translateY(-2px)}
-.footer-col h4{color:#fff;font-size:15px;margin-bottom:14px;font-weight:600}
-.footer-col a{display:block;color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;padding:2px 0;transition:color .2s}
-.footer-col a:hover{color:#fff}
-.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:13px;color:rgba(255,255,255,.4)}
-.footer-bottom a{color:rgba(255,255,255,.4);text-decoration:none;margin-left:20px;transition:color .2s}
-.footer-bottom a:hover{color:rgba(255,255,255,.8)}
+.social-icon{width:32px;height:32px;border-radius:50%;background:#F3F4F6;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.social-icon svg{fill:#9CA3AF}
+.social-icon:hover{background:var(--blue)}
+.social-icon:hover svg{fill:#fff}
+.footer-col h4{color:#1F2937;font-size:14px;margin-bottom:12px;font-weight:600}
+.footer-col a{display:block;color:#6B7280;text-decoration:none;font-size:13px;padding:2px 0;transition:color .2s}
+.footer-col a:hover{color:var(--blue)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding:20px 0 0;font-size:13px;color:#9CA3AF}
+.footer-bottom a{color:#9CA3AF;text-decoration:none;transition:color .2s}
+.footer-bottom a:hover{color:var(--blue)}
 @media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.footer-grid{grid-template-columns:1fr}}
 </style></head>
@@ -46,13 +49,13 @@
 <div class="c">
 <div class="footer-grid">
 <div class="footer-brand">
-<div class="logo-row"><img src="/images/deepseek-logo.svg" alt="DeepSeek" style="height:24px"><span style="color:#fff;font-weight:700;font-size:18px">DeepSeek</span></div>
+<div class="logo-row"><img src="/images/deepseek-logo.svg" alt="DeepSeek" style="height:24px"><span style="color:#1F2937;font-weight:700;font-size:18px">DeepSeek</span></div>
 <p class="footer-desc">提供 DeepSeek 官方正版下载教程和使用指南。覆盖 Windows、macOS、iOS、Android 全平台，V3 + R1 双模型免费使用。</p>
 <div class="social-icons">
-<a href="#" class="social-icon" aria-label="微信"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fff"><path d="M8.5 11a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM12 2C6.48 2 2 5.92 2 10.68c0 2.36 1.08 4.5 2.78 5.96l-.88 2.64 2.86-1.44c1.14.48 2.38.76 3.7.76l.54-.02C9.8 17.62 9 16.14 9 14.5c0-3.7 3.4-6.7 7.6-6.7.72 0 1.42.08 2.08.24A8.72 8.72 0 0012 2z"></path><circle cx="17" cy="14.5" r="5" fill="#fff"></circle></svg></a>
-<a href="#" class="social-icon" aria-label="微博"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fff"><path d="M10.098 20.323c-3.977.391-7.414-1.406-7.672-4.02-.259-2.609 2.759-5.047 6.74-5.441 3.979-.394 7.413 1.404 7.671 4.018.259 2.6-2.759 5.049-6.739 5.443z"></path></svg></a>
-<a href="#" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" width="14" height="14" fill="#fff"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231z"></path></svg></a>
-<a href="#" class="social-icon" aria-label="豆瓣"><svg viewBox="0 0 24 24" width="14" height="14" fill="#fff"><circle cx="12" cy="12" r="10" fill="none" stroke="#fff" stroke-width="2"/><text x="12" y="16" text-anchor="middle" font-size="8" fill="#fff">豆</text></svg></a>
+<a href="#" class="social-icon" aria-label="微信"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M8.5 11a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM12 2C6.48 2 2 5.92 2 10.68c0 2.36 1.08 4.5 2.78 5.96l-.88 2.64 2.86-1.44c1.14.48 2.38.76 3.7.76l.54-.02C9.8 17.62 9 16.14 9 14.5c0-3.7 3.4-6.7 7.6-6.7.72 0 1.42.08 2.08.24A8.72 8.72 0 0012 2z"></path><circle cx="17" cy="14.5" r="5"></circle></svg></a>
+<a href="#" class="social-icon" aria-label="微博"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M10.098 20.323c-3.977.391-7.414-1.406-7.672-4.02-.259-2.609 2.759-5.047 6.74-5.441 3.979-.394 7.413 1.404 7.671 4.018.259 2.6-2.759 5.049-6.739 5.443z"></path></svg></a>
+<a href="#" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231z"></path></svg></a>
+<a href="#" class="social-icon" aria-label="豆瓣"><svg viewBox="0 0 24 24" width="14" height="14"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><text x="12" y="16" text-anchor="middle" font-size="8">豆</text></svg></a>
 </div>
 </div>
 <div class="footer-col"><h4>下载安装</h4><a href="/download/deepseek-pc-install/">电脑版下载</a><a href="/download/deepseek-mobile-guide/">手机版下载</a><a href="/download/deepseek-official-site/">官网正版辨别</a><a href="/download/">全部下载方式</a></div>
@@ -61,8 +64,8 @@
 <div class="footer-col"><h4>关于本站</h4><a href="/sitemap-index.xml">网站地图</a><a href="/">首页</a><a href="/faq/">常见问题</a></div>
 </div>
 <div class="footer-bottom">
-<p>© 2026 deepseekget.com · 非DeepSeek官方网站，第三方使用指南站</p>
-<div><a href="/sitemap-index.xml">Sitemap</a></div>
+<span>© 2026 deepseekget.com · 非DeepSeek官方网站，第三方使用指南</span>
+<a href="/sitemap-index.xml">Sitemap</a>
 </div>
 </div>
 </footer></body></html>
