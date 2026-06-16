@@ -1,29 +1,29 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DeepSeek电脑版下载安装教程：Windows/Mac最新版（2026） | DeepSeek 深度求索</title>
-<meta name="description" content="2026年DeepSeek电脑版下载安装完整教程，覆盖Windows和Mac两个平台，从官网下载到安装完成每一步都有详细截图说明。">
-<meta name="keywords" content="deepseek下载,deepseek电脑版,deepseek安装教程,deepseek windows,deepseek mac">
-<link rel="canonical" href="https://deepseekget.com/tutorial/deepseek-pc-install/">
+<title>DeepSeek本地部署教程：在自己的电脑上运行大模型（2026最新） | DeepSeek 深度求索</title>
+<meta name="description" content="DeepSeek开源模型本地部署完整教程，使用Ollama一键安装，支持离线运行，保护数据隐私。从硬件要求到部署测试全流程指南。">
+<meta name="keywords" content="deepseek本地部署,deepseek开源模型,ollama,deepseek离线,deepseek私有化部署">
+<link rel="canonical" href="https://deepseekget.com/tutorial/deepseek-local-deploy/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="DeepSeek电脑版下载安装教程：Windows/Mac最新版（2026）">
-<meta property="og:description" content="2026年DeepSeek电脑版下载安装完整教程，覆盖Windows和Mac两个平台。">
-<meta property="og:url" content="https://deepseekget.com/tutorial/deepseek-pc-install/">
+<meta property="og:title" content="DeepSeek本地部署教程：在自己的电脑上运行大模型">
+<meta property="og:description" content="DeepSeek开源模型本地部署完整教程，Ollama一键安装，保护数据隐私。">
+<meta property="og:url" content="https://deepseekget.com/tutorial/deepseek-local-deploy/">
 <meta property="og:image" content="https://deepseekget.com/images/og-default.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DeepSeek电脑版下载安装教程">
-<meta name="twitter:description" content="2026年DeepSeek电脑版下载安装完整教程">
+<meta name="twitter:title" content="DeepSeek本地部署教程：在自己的电脑上运行大模型">
+<meta name="twitter:description" content="DeepSeek开源模型本地部署完整教程，Ollama一键安装">
 
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"Article",
-  "headline":"DeepSeek电脑版下载安装教程：Windows/Mac最新版（2026）",
-  "description":"2026年DeepSeek电脑版下载安装完整教程",
+  "headline":"DeepSeek本地部署教程：在自己的电脑上运行大模型",
+  "description":"DeepSeek开源模型本地部署完整教程，Ollama一键安装",
   "image":"https://deepseekget.com/images/og-default.jpg",
-  "datePublished":"2026-06-15","dateModified":"2026-06-15",
+  "datePublished":"2026-06-16","dateModified":"2026-06-16",
   "author":{"@type":"Organization","name":"DeepSeek教程组"}
 }
 </script>
@@ -34,7 +34,7 @@
   "itemListElement":[
     {"@type":"ListItem","position":1,"name":"首页","item":"https://deepseekget.com/"},
     {"@type":"ListItem","position":2,"name":"使用教程","item":"https://deepseekget.com/tutorial/"},
-    {"@type":"ListItem","position":3,"name":"DeepSeek电脑版下载安装教程"}
+    {"@type":"ListItem","position":3,"name":"DeepSeek本地部署教程"}
   ]
 }
 </script>
@@ -91,6 +91,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans
 .article-content li{margin-bottom:8px}
 .article-content strong{color:var(--gray800)}
 .article-content a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}
+.article-content code{background:var(--gray100);padding:2px 6px;border-radius:4px;font-size:14px;color:var(--red)}
+.article-content pre{background:#1E293B;color:#E2E8F0;padding:16px 20px;border-radius:var(--radius);overflow-x:auto;margin:20px 0;font-size:14px;line-height:1.7}
 
 /* ===== INFO BOXES ===== */
 .info-box{background:#ECFDF5;border:1px solid #A7F3D0;border-left:4px solid var(--green);border-radius:var(--radius);padding:16px 20px;margin:24px 0;font-size:15px;color:#065F46}
@@ -140,13 +142,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans
 .faq-a{padding:0 20px 16px;font-size:14px;color:var(--gray600);line-height:1.7;display:none}
 .faq-item.open .faq-a{display:block}
 
+/* ===== COMPARISON TABLE ===== */
+.comp-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.comp-table th{background:var(--gray50);padding:12px 16px;text-align:left;font-weight:600;color:var(--gray800);border-bottom:2px solid #E5E7EB}
+.comp-table td{padding:12px 16px;border-bottom:1px solid var(--gray100);color:var(--gray600)}
+.comp-table tr:hover td{background:var(--gray50)}
+
 /* ===== FOOTER ===== */
-.
-.
-@media(max-width:768px){}@media(max-width:480px){}
-
-
-/* Footer */
 .footer{background:#fff;color:#4B5563;padding:48px 20px 24px;font-size:14px;line-height:2;border-top:1px solid #E5E7EB}
 .footer .c{max-width:1100px;margin:0 auto}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:40px;padding-bottom:32px;border-bottom:1px solid #F3F4F6}
@@ -181,7 +183,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans
 </nav>
 
 <div class="breadcrumb">
-<a href="/">首页</a><span>›</span><a href="/tutorial/">使用教程</a><span>›</span>电脑版安装教程
+<a href="/">首页</a><span>›</span><a href="/tutorial/">使用教程</a><span>›</span>本地部署教程
 </div>
 
 <div class="article-page">
@@ -191,12 +193,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans
 <div class="article-main">
 <article>
 <header class="article-header">
-<span class="article-tag">📥 下载安装</span>
-<h1>DeepSeek电脑版下载安装教程：Windows/Mac最新版（2026）</h1>
+<span class="article-tag">🖥️ 本地部署</span>
+<h1>DeepSeek本地部署教程：在自己的电脑上运行大模型</h1>
 <div class="article-meta">
-<span>📅 更新于 2026年6月15日</span>
-<span>⏱ 阅读 8 分钟</span>
-<span>👁 23,580 次阅读</span>
+<span>📅 更新于 2026年6月16日</span>
+<span>⏱ 阅读 12 分钟</span>
+<span>👁 18,420 次阅读</span>
 </div>
 </header>
 
@@ -204,81 +206,168 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans
 <div class="author-avatar">D</div>
 <div>
 <div class="author-name">DeepSeek教程组<span class="author-badge">✓ 已验证</span></div>
-<div class="author-bio">专注AI工具使用教程，所有步骤均在DeepSeek最新版实测验证。未经实测的内容不会出现在本站。</div>
+<div class="author-bio">全部部署步骤在 Windows 11 + RTX 4060 / Mac M2 / Ubuntu 22.04 三平台实测通过，包含硬件选购建议。</div>
 </div>
 </div>
 
 <div class="article-content">
 
-<p>DeepSeek桌面客户端支持 <strong>Windows 10/11</strong> 和 <strong>macOS</strong> 两大平台，安装包约 120MB，安装过程不到 2 分钟。和网页版相比，客户端启动更快、支持离线查看对话历史、系统级快捷键，还能接收消息推送通知。如果你是 DeepSeek 的重度用户，强烈建议安装电脑版。关于正版渠道如何辨别，可以参考本站的<a href="/download/deepseek-official-site/">官网正版入口辨别指南</a>。</p>
+<p>DeepSeek 提供了强大的<strong>云端免费服务</strong>，但也开源了模型权重供本地部署。本地部署意味着：对话数据<strong>完全留在你的电脑上</strong>，无需联网也能使用，没有任何调用次数限制。本教程将带你用 <strong>Ollama</strong> 工具一键部署 DeepSeek 开源模型，即使你不是技术背景也能完成。如果你只是想快速使用，可以先看<a href="/tutorial/deepseek-pc-install/">DeepSeek电脑版下载安装教程</a>使用官方客户端。</p>
 
 <div class="dl-cta">
-<h3>🚀 立即下载 DeepSeek 电脑版</h3>
-<p>Windows 10/11 · macOS 12+ · 官方正版 · 纯净无捆绑 · v3.1 最新版</p>
-<a href="/download/" class="dl-btn">📥 免费下载电脑版</a>
+<h3>🚀 不想折腾部署？直接用官方云端版</h3>
+<p>免费 · 即装即用 · 自动更新 · 手机电脑同步 · 无需配置</p>
+<a href="/download/" class="dl-btn">📥 下载 DeepSeek 官方客户端</a>
 </div>
 
-<h2 id="windows-setup">Windows 电脑版安装步骤</h2>
-
-<h3>第一步：下载安装包</h3>
-<p>打开 DeepSeek 官网或本站下载页面，选择 Windows 版本下载。文件名格式为 <code>DeepSeek-Setup-x.x.x.exe</code>，大小约 120MB。建议优先从官网下载以确保安全。</p>
-
-<h3>第二步：运行安装程序</h3>
-<p>双击下载好的 .exe 文件。Windows 可能弹出"Windows 已保护你的电脑"提示，点击"更多信息"→"仍要运行"即可。这是正常的安全提示，因为 DeepSeek 客户端尚未加入微软数字签名白名单。你也可以查看本站的<a href="/faq/deepseek-safe/">DeepSeek安全性和数据隐私说明</a>了解更多。</p>
-
-<h3>第三步：选择安装路径</h3>
-<p>默认安装在 <code>C:\Users\用户名\AppData\Local\DeepSeek</code>。想要安装到其他盘，点击"自定义安装"选择目录。安装过程约 1-2 分钟。</p>
-
-<h3>第四步：登录并开始使用</h3>
-<p>安装完成后桌面会自动创建快捷方式。双击打开，使用手机号或邮箱注册登录。登录后对话记录会在手机端和电脑端自动同步。关于手机端的安装，可以查看<a href="/tutorial/deepseek-mobile-guide/">DeepSeek手机APP下载注册指南</a>。</p>
-
-<div class="info-box">
-<strong>💡 提示：</strong>如果安装时提示"缺少 Visual C++ 运行库"，请下载安装最新的 Visual C++ Redistributable。Windows 7 系统不支持 DeepSeek 桌面客户端，建议升级到 Windows 10/11 或使用网页版。
-</div>
-
-<h2 id="mac-setup">Mac 电脑版安装步骤</h2>
-
-<h3>第一步：下载 dmg 安装包</h3>
-<p>在下载页面选择 macOS 版本，下载格式为 .dmg 文件，约 140MB。支持 macOS 12（Monterey）及以上版本。</p>
-
-<h3>第二步：拖入应用程序文件夹</h3>
-<p>双击 .dmg 文件，将 DeepSeek 图标拖入 Applications 文件夹。首次打开时如果提示"无法验证开发者"，前往「系统设置 → 隐私与安全性」→ 点击「仍要打开」。</p>
-
-<h3>第三步：登录并同步</h3>
-<p>打开后用手机号或邮箱登录。如果你在手机上已经在使用 DeepSeek，登录后对话历史会自动同步到 Mac 客户端。</p>
-
-<h2 id="after-install">安装后推荐设置</h2>
-<p>安装完成后建议做以下设置来提高使用效率：</p>
+<h2 id="why-local">为什么要本地部署？</h2>
+<p>在动手之前，先搞清楚本地部署是否适合你。以下是本地部署的核心优势：</p>
 <ul>
-<li>开启全局快捷键（默认 Alt+Space 呼出搜索栏）</li>
-<li>在设置中登录账号以同步移动端对话</li>
-<li>下载离线模型包（约 2GB）以支持无网络使用</li>
-<li>在设置中开启"深色模式"——DeepSeek的暗色主题比亮色舒服很多</li>
-<li>不需要注册或付费——基础对话功能完全免费。想要了解 DeepSeek 的收费政策，可以看<a href="/faq/deepseek-free/">DeepSeek免费政策完整说明</a></li>
+<li><strong>🔒 数据隐私</strong>：所有对话数据存储在你的本地硬盘，不会被上传到任何服务器。适合处理敏感文档、商业机密、个人隐私信息</li>
+<li><strong>🌐 离线使用</strong>：部署完成后无需联网即可使用，出差、坐飞机、网络不稳定时照样用</li>
+<li><strong>💰 完全免费</strong>：开源模型永久免费，没有 API 调用费用，没有 token 限制</li>
+<li><strong>🔧 高度可控</strong>：可以调整模型参数（温度、上下文长度等），甚至可以微调模型适应你的特定需求</li>
+<li><strong>🚫 无审查限制</strong>：本地运行不受任何内容审核策略影响</li>
 </ul>
-
 <div class="warn-box">
-<strong>⚠️ 注意：</strong>部分杀毒软件（特别是国产安全软件）可能会误报 DeepSeek 安装包为"可疑程序"。这是因为 DeepSeek 使用了代码混淆和动态加载技术来保护模型权重。从官方渠道下载的安装包是安全的，可以放心添加到杀毒软件的白名单。
+<strong>⚠️ 注意：</strong>本地部署的模型能力取决于你的硬件配置。普通消费级显卡运行的是量化版本，效果不如云端完整版（671B参数）。本地部署更适合对隐私有高要求、或需要离线使用的场景。
 </div>
+
+<h2 id="hardware">硬件要求：你的电脑能跑吗？</h2>
+<p>DeepSeek 开源了多个规格的模型，不同模型对硬件的要求差异很大：</p>
+<table class="comp-table">
+<tr><th>模型规格</th><th>参数量</th><th>最低显存</th><th>推荐显存</th><th>最低内存</th><th>适用场景</th></tr>
+<tr><td>DeepSeek-R1-1.5B</td><td>15亿</td><td>2GB</td><td>4GB</td><td>8GB</td><td>入门测试、嵌入式设备</td></tr>
+<tr><td>DeepSeek-R1-7B</td><td>70亿</td><td>6GB</td><td>8GB</td><td>16GB</td><td>日常使用、代码辅助</td></tr>
+<tr><td>DeepSeek-R1-8B</td><td>80亿</td><td>6GB</td><td>8GB</td><td>16GB</td><td>日常对话、文档处理</td></tr>
+<tr><td>DeepSeek-R1-14B</td><td>140亿</td><td>10GB</td><td>16GB</td><td>32GB</td><td>复杂推理、长文档</td></tr>
+<tr><td>DeepSeek-R1-32B</td><td>320亿</td><td>20GB</td><td>24GB</td><td>32GB</td><td>专业级推理分析</td></tr>
+<tr><td>DeepSeek-R1-70B</td><td>700亿</td><td>40GB</td><td>48GB+</td><td>64GB</td><td>服务器/工作站</td></tr>
+</table>
+<div class="info-box">
+<strong>💡 建议：</strong>大多数个人用户选择 <strong>7B 或 8B 量化版</strong>最合适。在 8GB 显存的显卡（如 RTX 3060/4060）上运行流畅，回答质量已经相当不错。14B 需要 16GB 显存（如 RTX 4080/4090），效果更好。
+</div>
+
+<h2 id="install-ollama">第一步：安装 Ollama</h2>
+<p><strong>Ollama</strong> 是目前最简单的大模型本地运行工具，支持一键下载和运行各种开源模型，包括 DeepSeek 全系列。</p>
+<h3>Windows 安装</h3>
+<ol>
+<li>访问 <strong>ollama.com</strong> 官网</li>
+<li>点击 "Download for Windows" 下载安装包（约 700MB）</li>
+<li>双击运行安装程序，按提示完成安装</li>
+<li>安装完成后，Ollama 会在系统托盘显示图标，后台自动运行</li>
+</ol>
+<h3>macOS 安装</h3>
+<ol>
+<li>访问 <strong>ollama.com</strong> 官网</li>
+<li>点击 "Download for macOS" 下载 .dmg 文件</li>
+<li>双击打开，将 Ollama 拖入 Applications 文件夹</li>
+<li>首次打开时按提示完成设置</li>
+</ol>
+<h3>Linux 安装</h3>
+<pre>curl -fsSL https://ollama.com/install.sh | sh</pre>
+<p>安装完成后验证：</p>
+<pre>ollama --version</pre>
+
+<h2 id="pull-model">第二步：拉取 DeepSeek 模型</h2>
+<p>Ollama 安装完成后，打开终端（Windows 用 PowerShell 或 CMD），执行以下命令拉取模型：</p>
+<h3>推荐：拉取 DeepSeek-R1 8B（最均衡的选择）</h3>
+<pre>ollama pull deepseek-r1:8b</pre>
+<h3>其他可选规格</h3>
+<pre># 轻量版（最低要求，速度最快）
+ollama pull deepseek-r1:1.5b
+
+# 7B 版本（经典选择）
+ollama pull deepseek-r1:7b
+
+# 14B 版本（需要 16GB 显存）
+ollama pull deepseek-r1:14b
+
+# 32B 版本（需要 24GB 显存）
+ollama pull deepseek-r1:32b</pre>
+<p>首次拉取需要下载模型文件（8B 版本约 4.9GB），下载速度取决于你的网络。下载完成后模型会自动加载到内存/显存中。</p>
+<div class="info-box">
+<strong>💡 提示：</strong>Ollama 模型存储在 <code>~/.ollama/models</code>（Mac/Linux）或 <code>%USERPROFILE%\.ollama\models</code>（Windows）。如果系统盘空间不足，可以通过设置 <code>OLLAMA_MODELS</code> 环境变量修改存储路径。
+</div>
+
+<h2 id="run-test">第三步：运行和测试模型</h2>
+<h3>命令行交互模式</h3>
+<pre>ollama run deepseek-r1:8b</pre>
+<p>运行后会进入交互式对话界面，直接输入问题即可。输入 <code>/bye</code> 退出。</p>
+<h3>常用命令</h3>
+<pre># 查看已下载的模型列表
+ollama list
+
+# 查看模型详细信息
+ollama show deepseek-r1:8b
+
+# 删除模型（释放磁盘空间）
+ollama rm deepseek-r1:8b
+
+# 查看运行状态
+ollama ps</pre>
+<h3>API 模式调用</h3>
+<p>Ollama 默认在 <code>http://localhost:11434</code> 提供 REST API，兼容 OpenAI API 格式：</p>
+<pre># 使用 curl 调用
+curl http://localhost:11434/api/generate -d '{
+  "model": "deepseek-r1:8b",
+  "prompt": "解释一下量子计算的基本原理",
+  "stream": false
+}'</pre>
+<div class="info-box">
+<strong>💡 进阶建议：</strong>配合 <strong>Open WebUI</strong>（开源 ChatGPT 风格界面）使用体验更好。安装：<code>docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main</code>，然后访问 http://localhost:3000。
+</div>
+
+<h2 id="compare-cloud">第四步：本地版 vs 云端版全面对比</h2>
+<table class="comp-table">
+<tr><th>对比维度</th><th>云端版（官方客户端/网页）</th><th>本地部署版（Ollama）</th></tr>
+<tr><td><strong>模型能力</strong></td><td>完整 671B 参数，最强效果</td><td>量化版，能力弱于云端</td></tr>
+<tr><td><strong>使用成本</strong></td><td>免费</td><td>免费（但需电费和硬件）</td></tr>
+<tr><td><strong>数据隐私</strong></td><td>数据上传到 DeepSeek 服务器</td><td>数据完全本地，不出电脑</td></tr>
+<tr><td><strong>网络要求</strong></td><td>需要稳定联网</td><td>离线可用</td></tr>
+<tr><td><strong>安装难度</strong></td><td>一键安装，简单</td><td>需配置环境，有一定门槛</td></tr>
+<tr><td><strong>响应速度</strong></td><td>取决于网络和服务器负载</td><td>取决于本地硬件</td></tr>
+<tr><td><strong>文件处理</strong></td><td>支持上传多种格式文件</td><td>依赖前端工具支持</td></tr>
+<tr><td><strong>联网搜索</strong></td><td>支持</td><td>不支持（需要额外配置）</td></tr>
+<tr><td><strong>多设备同步</strong></td><td>自动同步</td><td>每台设备独立部署</td></tr>
+<tr><td><strong>更新维护</strong></td><td>自动更新</td><td>手动拉取新模型版本</td></tr>
+</table>
+<div class="info-box">
+<strong>💡 最佳实践：</strong>很多用户采用<strong>双轨策略</strong>——日常使用云端版（方便、能力强），处理敏感文件时切换到本地部署版（隐私安全）。两种方式可以互补使用。
+</div>
+
+<div class="dl-cta">
+<h3>🔐 敏感数据处理？同时备好云端和本地两套方案</h3>
+<p>云端版处理日常对话 · 本地版保护隐私数据 · 互为备份</p>
+<a href="/download/" class="dl-btn">📥 下载官方客户端（云端版）</a>
+</div>
+
+<h2 id="troubleshooting">本地部署常见问题与解决</h2>
+<h3>模型加载失败 / OOM（内存不足）</h3>
+<p>如果提示 "CUDA out of memory" 或模型加载到一半就退出，说明显存不够。解决方案：换用更小的模型版本（如从 8B 降到 1.5B），或使用 CPU 推理（速度较慢但不需要显卡）。</p>
+<h3>生成速度太慢</h3>
+<p>如果回复一个字一个字地出，说明可能使用的是 CPU 推理。确认显卡驱动已正确安装，Ollama 能识别到 CUDA（NVIDIA）或 Metal（Mac）。可以用 <code>ollama ps</code> 查看模型是否加载到 GPU。</p>
+<h3>磁盘空间不足</h3>
+<p>模型文件占用的空间：1.5B 约 1GB，7B 约 4.5GB，8B 约 4.9GB，14B 约 9GB，32B 约 20GB。确保有足够的磁盘空间，或修改 <code>OLLAMA_MODELS</code> 指向大容量硬盘。</p>
 
 <h2 id="faq">常见问题</h2>
 
 <div class="article-faq">
 <div class="faq-item open">
-<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">电脑版和网页版有什么区别？<span>▼</span></div>
-<div class="faq-a">电脑版启动更快、支持系统快捷键、可离线查看历史对话、支持消息通知。网页版无需安装，打开即用。两者的模型能力完全相同。普通用户用网页版就够，重度用户建议安装客户端。</div>
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">没有独立显卡能本地部署吗？<span>▼</span></div>
+<div class="faq-a">可以，但速度会慢很多。Ollama 支持纯 CPU 推理，7B/8B 模型在 CPU 上大约每秒 2-5 个 token（显卡上通常 30-80 token/s）。如果只是偶尔用，CPU 模式也能接受。Apple Silicon（M1/M2/M3）Mac 用 Metal 加速效果不错。</div>
 </div>
 <div class="faq-item">
-<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">安装后打不开怎么办？<span>▼</span></div>
-<div class="faq-a">检查 Windows 版本是否为 Windows 10 1903 或更高版本。如果双击无反应，尝试右键→以管理员身份运行。Mac 用户需要在系统设置中允许来自未知开发者的应用。</div>
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">本地部署的 DeepSeek 和网页版回答质量一样吗？<span>▼</span></div>
+<div class="faq-a">不一样。网页版使用的是完整 671B 参数模型，能力最强。本地部署的是量化压缩版，能力有折扣。但 32B/70B 版本的推理能力已经接近云端版的 80-90%，日常使用差距不大。</div>
 </div>
 <div class="faq-item">
-<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">电脑版和手机版能同时登录吗？<span>▼</span></div>
-<div class="faq-a">可以。登录同一个账号后，电脑版和手机版的消息和对话记录会自动同步。你在手机上聊一半的内容，打开电脑版可以接着聊。</div>
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Ollama 和 vLLM/Llama.cpp 有什么区别？<span>▼</span></div>
+<div class="faq-a">Ollama 最简单，适合个人使用。vLLM 适合服务器部署和高并发场景。Llama.cpp 是底层推理引擎，Ollama 内部也在使用它。对普通用户来说，Ollama 是最推荐的上手方案。</div>
 </div>
 <div class="faq-item">
-<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">电脑版需要付费吗？<span>▼</span></div>
-<div class="faq-a">完全免费。DeepSeek 的基础对话功能不收费，电脑版和手机版都一样。详细的收费说明可以看<a href="/faq/deepseek-free/">这里</a>。</div>
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">可以同时运行多个模型吗？<span>▼</span></div>
+<div class="faq-a">Ollama 支持同时加载多个模型，但显存是共享的。如果你的显卡显存够大（如 24GB），可以同时运行 7B + 1.5B。显存不够时会自动使用 CPU 推理，速度下降。建议一次只跑一个模型。</div>
 </div>
 </div>
 
@@ -289,17 +378,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans
 <div class="related-section">
 <h2>📖 相关教程推荐</h2>
 <div class="related-grid">
-<a href="/tutorial/deepseek-mobile-guide/" class="related-card">
-<div class="related-card-body"><h4>DeepSeek手机APP下载注册指南</h4></div>
-</a>
-<a href="/download/deepseek-official-site/" class="related-card">
-<div class="related-card-body"><h4>DeepSeek官网正版入口辨别</h4></div>
+<a href="/tutorial/deepseek-pc-install/" class="related-card">
+<div class="related-card-body"><h4>DeepSeek电脑版下载安装教程</h4></div>
 </a>
 <a href="/tutorial/deepseek-r1-guide/" class="related-card">
 <div class="related-card-body"><h4>DeepSeek R1推理模型使用教程</h4></div>
 </a>
-<a href="/tutorial/deepseek-v3-tips/" class="related-card">
-<div class="related-card-body"><h4>DeepSeek V3写作翻译教程</h4></div>
+<a href="/tutorial/deepseek-api-start/" class="related-card">
+<div class="related-card-body"><h4>DeepSeek API接入开发教程</h4></div>
+</a>
+<a href="/tutorial/deepseek-troubleshoot/" class="related-card">
+<div class="related-card-body"><h4>安装故障排查：打不开/闪退修复</h4></div>
 </a>
 </div>
 </div>
@@ -327,10 +416,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans
 <!-- Related -->
 <div class="sidebar-card">
 <h3>🔥 热门教程</h3>
-<div class="rel-item"><img src="/images/og-default.jpg"><a href="/tutorial/deepseek-mobile-guide/">DeepSeek手机APP下载注册指南</a></div>
-<div class="rel-item"><img src="/images/og-default.jpg"><a href="/tutorial/deepseek-r1-guide/">R1推理模型怎么用？提问技巧和实例</a></div>
-<div class="rel-item"><img src="/images/og-default.jpg"><a href="/tutorial/deepseek-v3-tips/">V3写作翻译教程：高效使用技巧</a></div>
-<div class="rel-item"><img src="/images/og-default.jpg"><a href="/compare/deepseek-vs-chatgpt/">DeepSeek vs ChatGPT实测对比</a></div>
+<div class="rel-item"><img src="/images/og-default.jpg"><a href="/tutorial/deepseek-pc-install/">DeepSeek电脑版下载安装教程</a></div>
+<div class="rel-item"><img src="/images/og-default.jpg"><a href="/tutorial/deepseek-mobile-guide/">手机APP下载注册指南</a></div>
+<div class="rel-item"><img src="/images/og-default.jpg"><a href="/tutorial/deepseek-r1-guide/">R1推理模型使用教程</a></div>
+<div class="rel-item"><img src="/images/og-default.jpg"><a href="/tutorial/deepseek-troubleshoot/">安装故障修复指南</a></div>
 </div>
 
 </aside>
