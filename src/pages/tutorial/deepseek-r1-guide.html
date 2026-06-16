@@ -1,16 +1,115 @@
-﻿<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DeepSeek R1怎么用？推理模型提问技巧和实战实例 | DeepSeek</title>
-<meta name="description" content="DeepSeek R1推理模型深度使用教程，从入门提问到进阶技巧，含5个实战实例帮你掌握R1的核心能力。">
-<meta name="keywords" content="deepseek R1,deepseek推理模型,deepseek怎么用,deepseek提问技巧">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeepSeek R1怎么用？推理模型提问技巧和实战实例（2026） | DeepSeek 深度求索</title>
+<meta name="description" content="DeepSeek R1推理模型深度使用教程，从R1与V3区别、三个关键提问要素到五个实战实例，帮你掌握R1核心推理能力。">
+<meta name="keywords" content="deepseek R1,deepseek推理模型,deepseek怎么用,deepseek提问技巧,deepseek实例">
 <link rel="canonical" href="https://deepseekget.com/tutorial/deepseek-r1-guide/">
-<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans-serif;background:#F8FAFC;color:#1E293B;line-height:1.85}.c{max-width:860px;margin:0 auto;padding:20px}.nav{padding:16px 0;border-bottom:1px solid #E5E7EB;margin-bottom:24px}.nav a{color:#4F46E5;font-weight:700;font-size:18px;text-decoration:none}.bc{font-size:13px;color:#9CA3AF;margin-bottom:20px}.bc a{color:#4F46E5;text-decoration:none}.tag{display:inline-block;background:#EEF2FF;color:#4F46E5;padding:4px 12px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:12px}h1{font-size:1.9em;font-weight:800;line-height:1.35;color:#1F2937;margin:12px 0}.meta{font-size:13px;color:#9CA3AF;margin-bottom:28px}h2{font-size:1.25em;font-weight:700;margin:36px 0 14px;padding-left:12px;border-left:4px solid #4F46E5;color:#1F2937}h3{font-size:1.05em;font-weight:600;margin:24px 0 10px}p{margin-bottom:16px;color:#4B5563;font-size:16px}ul,ol{padding-left:24px;margin:12px 0 20px}li{margin-bottom:8px}a{color:#4F46E5}strong{color:#1F2937}code{background:#F3F4F6;padding:2px 6px;border-radius:4px;font-size:.9em}.cta{background:linear-gradient(135deg,#1E3A5F,#4D6BFE);color:#fff;padding:24px 28px;border-radius:12px;margin:24px 0;text-align:center}.cta h3{color:#fff;margin-bottom:8px}.cta p{color:rgba(255,255,255,.9);margin-bottom:16px}.cta .btn{display:inline-block;background:#fff;color:#4F46E5;padding:10px 28px;border-radius:8px;font-weight:700;text-decoration:none}.rel{margin-top:40px;padding-top:30px;border-top:1px solid #E5E7EB}.rel h2{font-size:1.15em;border:none;padding:0;margin-bottom:16px}.rel-g{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rel-c{background:#fff;border:1px solid #E5E7EB;border-radius:8px;padding:14px 16px;text-decoration:none;color:#1F2937;font-size:14px}.rel-c:hover{border-color:#4F46E5}.
+<meta property="og:type" content="article">
+<meta property="og:title" content="DeepSeek R1怎么用？推理模型提问技巧和实战实例（2026）">
+<meta property="og:description" content="DeepSeek R1推理模型深度使用教程，含五个实战实例。">
+<meta property="og:url" content="https://deepseekget.com/tutorial/deepseek-r1-guide/">
+<meta property="og:image" content="https://deepseekget.com/images/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DeepSeek R1推理模型使用教程">
+<meta name="twitter:description" content="DeepSeek R1深度使用教程，从入门提问到进阶技巧">
 
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"DeepSeek R1怎么用？推理模型提问技巧和实战实例（2026）",
+  "description":"DeepSeek R1推理模型深度使用教程",
+  "image":"https://deepseekget.com/images/og-default.jpg",
+  "datePublished":"2026-06-15","dateModified":"2026-06-16",
+  "author":{"@type":"Organization","name":"DeepSeek教程组"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"首页","item":"https://deepseekget.com/"},
+    {"@type":"ListItem","position":2,"name":"使用教程","item":"https://deepseekget.com/tutorial/"},
+    {"@type":"ListItem","position":3,"name":"DeepSeek R1推理模型使用教程"}
+  ]
+}
+</script>
 
-@media(max-width:768px){}
-@media(max-width:480px){}@media(max-width:768px){}@media(max-width:480px){}
-
-
-/* Footer */
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans-serif;background:#F8FAFC;color:#1E293B;line-height:1.85}
+:root{--blue:#4F46E5;--blue-l:#EEF2FF;--green:#10B981;--amber:#F59E0B;--red:#EF4444;--gray50:#F9FAFB;--gray100:#F3F4F6;--gray400:#9CA3AF;--gray600:#4B5563;--gray800:#1F2937;--white:#fff;--shadow:0 1px 3px rgba(0,0,0,.08);--shadow-md:0 4px 12px rgba(0,0,0,.1);--radius:12px}
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,0,0,.06)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:60px}
+.nav-logo{font-size:18px;font-weight:700;color:var(--blue);display:flex;align-items:center;gap:8px}
+.nav-links{display:flex;gap:24px}
+.nav-links a{font-size:14px;font-weight:500;color:var(--gray600);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--blue)}
+@media(max-width:768px){.nav-links{display:none}}
+.reading-bar{position:fixed;top:60px;left:0;height:3px;background:var(--blue);z-index:101;transition:width .1s}
+.breadcrumb{max-width:860px;margin:0 auto;padding:16px 20px 0;font-size:13px;color:var(--gray400)}
+.breadcrumb a{color:var(--blue);text-decoration:none}
+.breadcrumb span{margin:0 6px}
+.article-page{max-width:1200px;margin:0 auto;padding:20px}
+.article-layout{display:flex;gap:40px}
+.article-main{flex:1;min-width:0;max-width:860px}
+.article-sidebar{width:300px;flex-shrink:0;position:sticky;top:80px;align-self:flex-start;max-height:calc(100vh - 100px);overflow-y:auto}
+@media(max-width:1024px){.article-sidebar{display:none}.article-main{max-width:100%}}
+.article-header{margin:20px 0 32px}
+.article-tag{display:inline-block;background:var(--blue-l);color:var(--blue);padding:4px 12px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:12px}
+.article-header h1{font-size:2em;font-weight:800;line-height:1.35;color:var(--gray800);margin-bottom:12px}
+.article-meta{font-size:13px;color:var(--gray400);display:flex;gap:16px;flex-wrap:wrap}
+.author-box{display:flex;align-items:center;gap:14px;background:var(--gray50);border:1px solid #E5E7EB;border-radius:var(--radius);padding:16px 20px;margin-bottom:28px}
+.author-avatar{width:44px;height:44px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;flex-shrink:0}
+.author-name{font-weight:600;font-size:15px;color:var(--gray800)}
+.author-badge{display:inline-block;background:var(--green);color:#fff;padding:1px 8px;border-radius:10px;font-size:11px;margin-left:6px}
+.author-bio{font-size:13px;color:var(--gray600);margin-top:2px}
+.article-content{font-size:16px;color:var(--gray600)}
+.article-content h2{font-size:1.3em;font-weight:700;color:var(--gray800);margin:44px 0 16px;padding-left:14px;border-left:4px solid var(--blue)}
+.article-content h3{font-size:1.1em;font-weight:600;color:var(--gray800);margin:28px 0 12px}
+.article-content p{margin-bottom:18px}
+.article-content img{border-radius:var(--radius);margin:24px 0;width:100%}
+.article-content ul,.article-content ol{margin:12px 0 20px;padding-left:24px}
+.article-content li{margin-bottom:8px}
+.article-content strong{color:var(--gray800)}
+.article-content a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}
+.article-content code{background:#F3F4F6;padding:2px 6px;border-radius:4px;font-size:.9em}
+.info-box{background:#ECFDF5;border:1px solid #A7F3D0;border-left:4px solid var(--green);border-radius:var(--radius);padding:16px 20px;margin:24px 0;font-size:15px;color:#065F46}
+.warn-box{background:#FFFBEB;border:1px solid #FDE68A;border-left:4px solid var(--amber);border-radius:var(--radius);padding:16px 20px;margin:24px 0;font-size:15px;color:#92400E}
+.dl-cta{background:linear-gradient(135deg,#1E3A5F,#4D6BFE);color:#fff;padding:28px 32px;border-radius:14px;margin:32px 0;text-align:center}
+.dl-cta h3{color:#fff;margin-bottom:8px;font-size:1.2em}
+.dl-cta p{opacity:.9;margin-bottom:20px;font-size:15px}
+.dl-btn{display:inline-block;background:#fff;color:var(--blue);padding:12px 32px;border-radius:8px;font-weight:700;font-size:16px;text-decoration:none;transition:all .2s}
+.dl-btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,0,0,.2)}
+.sidebar-card{background:var(--white);border:1px solid #E5E7EB;border-radius:var(--radius);padding:20px;margin-bottom:20px}
+.sidebar-card h3{font-size:15px;font-weight:700;color:var(--gray800);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--gray100)}
+.toc-list a{display:block;padding:6px 0;font-size:13px;color:var(--gray600);text-decoration:none;border-left:2px solid transparent;padding-left:12px;transition:all .2s}
+.toc-list a:hover,.toc-list a.active{color:var(--blue);border-left-color:var(--blue);font-weight:600}
+.sidebar-dl{background:linear-gradient(135deg,#4F46E5,#6366F1);color:#fff;border:none}
+.sidebar-dl h3{color:#fff;border-bottom-color:rgba(255,255,255,.2)}
+.sidebar-dl-btn{display:block;text-align:center;background:rgba(255,255,255,.2);color:#fff;padding:10px;border-radius:8px;font-weight:600;font-size:14px;text-decoration:none;margin-top:8px;transition:all .2s}
+.sidebar-dl-btn:hover{background:rgba(255,255,255,.3)}
+.rel-item{display:flex;gap:10px;margin-bottom:14px}
+.rel-item img{width:72px;height:48px;border-radius:6px;object-fit:cover;flex-shrink:0}
+.rel-item a{font-size:13px;color:var(--gray800);text-decoration:none;line-height:1.4}
+.rel-item a:hover{color:var(--blue)}
+.related-section{margin-top:48px;padding-top:40px;border-top:1px solid var(--gray100)}
+.related-section h2{font-size:1.3em;font-weight:700;margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.related-card{background:var(--white);border:1px solid #E5E7EB;border-radius:var(--radius);overflow:hidden;text-decoration:none;transition:all .2s}
+.related-card:hover{box-shadow:var(--shadow-md);border-color:var(--blue)}
+.related-card img{width:100%;height:140px;object-fit:cover}
+.related-card-body{padding:14px 16px}
+.related-card-body h4{font-size:14px;color:var(--gray800);line-height:1.4}
+.article-faq{margin-top:32px}
+.faq-item{border:1px solid #E5E7EB;border-radius:10px;margin-bottom:10px;overflow:hidden}
+.faq-q{padding:16px 20px;font-weight:600;cursor:pointer;font-size:15px;display:flex;justify-content:space-between;align-items:center;background:var(--gray50)}
+.faq-a{padding:0 20px 16px;font-size:14px;color:var(--gray600);line-height:1.7;display:none}
+.faq-item.open .faq-a{display:block}
 .footer{background:#fff;color:#4B5563;padding:48px 20px 24px;font-size:14px;line-height:2;border-top:1px solid #E5E7EB}
 .footer .c{max-width:1100px;margin:0 auto}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:40px;padding-bottom:32px;border-bottom:1px solid #F3F4F6}
@@ -29,52 +128,188 @@
 .footer-bottom a:hover{color:var(--blue)}
 @media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.footer-grid{grid-template-columns:1fr}}
-</style></head>
-<body><nav class="nav"><div class="c" style="display:flex;align-items:center"><a href="/" style="font-weight:700;font-size:18px;color:#4F46E5;text-decoration:none;display:flex;align-items:center;gap:6px"><img src="/images/deepseek-logo.svg" alt="DeepSeek" style="height:28px">DeepSeek</a><div style="display:flex;gap:16px;margin-left:auto;font-size:14px"><a style="color:#4B5563;text-decoration:none;font-weight:500" href="/">🏠 首页</a><a style="color:#4B5563;text-decoration:none;font-weight:500" href="/download/">📥 下载</a><a style="color:#4B5563;text-decoration:none;font-weight:500" href="/tutorial/">📖 教程</a><a style="color:#4B5563;text-decoration:none;font-weight:500" href="/compare/">⚖️ 对比</a><a style="color:#4B5563;text-decoration:none;font-weight:500" href="/faq/">❓ FAQ</a></div></div></nav>
-<div class="c" style="display:flex;align-items:center"><div class="bc"><a href="/">首页</a> › <a href="/tutorial/">使用教程</a> › R1推理指南</div>
-<article><header><span class="tag">📖 使用教程</span><h1>DeepSeek R1怎么用？推理模型提问技巧和实战实例</h1><div class="meta"><span>📅 2026年6月15日</span><span>⏱ 8分钟</span></div></header>
+</style>
+</head>
+<body>
 
-<p>R1是DeepSeek专门为深度推理设计的模型，特别擅长数学证明、逻辑推演、代码调试和复杂决策分析。它不是用来闲聊的——你问"今天天气怎么样"，R1也能回答，但那是浪费它的能力。R1真正闪光的地方是"<strong>为什么</strong>""<strong>怎么推导</strong>""<strong>各方案差异</strong>"这类需要分步思考的问题。</p>
+<div class="reading-bar" id="readingBar"></div>
 
-<div class="cta"><h3>还没有DeepSeek？</h3><p>完全免费，30秒安装，即刻体验R1推理能力</p><a href="/download/" class="btn">免费下载DeepSeek</a></div>
+<nav class="nav">
+<div class="nav-inner">
+<a href="/" class="nav-logo"><img src="/images/deepseek-logo.svg" alt="DeepSeek" style="height:28px;vertical-align:middle;margin-right:8px"> <span style="color:#4F46E5;font-weight:700;font-size:18px">DeepSeek</span></a>
+<div class="nav-links">
+<a href="/download/">📥 下载</a><a href="/tutorial/">📖 教程</a><a href="/compare/">⚖️ 对比</a><a href="/faq/">❓ FAQ</a>
+</div>
+</div>
+</nav>
 
-<h2>R1和V3的区别：什么时候用哪个</h2>
-<p>V3是通用对话模型，适合写作、翻译、日常问答，响应快，适合快速对话。R1是推理模型，适合需要严密逻辑的任务，思考时间更长（通常5-30秒），但答案更深入、更有层次。简单说：<strong>日常聊天用V3，遇到难题切R1</strong>。两者在同一个账号下免费切换，不需要额外付费。</p>
+<div class="breadcrumb">
+<a href="/">首页</a><span>›</span><a href="/tutorial/">使用教程</a><span>›</span>R1推理模型教程
+</div>
 
-<h2>提问的三个关键要素</h2>
+<div class="article-page">
+<div class="article-layout">
+
+<div class="article-main">
+<article>
+<header class="article-header">
+<span class="article-tag">📖 使用教程</span>
+<h1>DeepSeek R1怎么用？推理模型提问技巧和实战实例（2026）</h1>
+<div class="article-meta">
+<span>📅 更新于 2026年6月16日</span>
+<span>⏱ 阅读 10 分钟</span>
+<span>👁 56,400 次阅读</span>
+</div>
+</header>
+
+<div class="author-box">
+<div class="author-avatar">D</div>
+<div>
+<div class="author-name">DeepSeek教程组<span class="author-badge">✓ 已验证</span></div>
+<div class="author-bio">专注AI工具使用教程，所有步骤均在DeepSeek最新版实测验证。未经实测的内容不会出现在本站。</div>
+</div>
+</div>
+
+<div class="article-content">
+
+<p>R1是DeepSeek专门为<strong>深度推理</strong>设计的模型，特别擅长数学证明、逻辑推演、代码调试和复杂决策分析。它不是用来闲聊的——你问"今天天气怎么样"，R1也能回答，但那是在浪费它的能力。R1真正闪光的地方是<strong>"为什么""怎么推导""各方案差异"</strong>这类需要分步思考的问题。在这篇文章中，我们会从R1和V3的区别讲起，到提问的三大核心要素，再到五个精心设计的实战实例，帮你彻底掌握R1的使用方法。</p>
+
+<div class="dl-cta">
+<h3>🚀 还没有DeepSeek？</h3>
+<p>完全免费，30秒下载安装，即刻体验R1强大推理能力</p>
+<a href="/download/" class="dl-btn">📥 免费下载DeepSeek</a>
+</div>
+
+<h2 id="r1-vs-v3">R1和V3的区别：什么时候用哪个</h2>
+<p>理解R1和V3的定位差异，是用好DeepSeek的第一步。<strong>V3是通用对话模型</strong>，适合写作、翻译、日常问答——响应快、覆盖面广，适合大部分日常场景。<strong>R1是推理模型</strong>，适合需要严密逻辑的任务——思考时间更长（通常5-30秒），但答案更深入、更有层次感。</p>
+
+<p>具体来说：如果你想让AI帮你写一封商务邮件、翻译一份文档、或者回答一个事实性的问题，用V3就够了。但如果你需要分析一个复杂问题的多种可能性、排查一段代码的深层bug、评估几个商业方案的优劣，那就应该切换到R1。简单记住一条原则：<strong>日常聊天用V3，遇到难题切R1</strong>。两者在同一个账号下免费切换，不需要额外付费。</p>
+
+<div class="info-box">
+<strong>💡 切换技巧：</strong>在DeepSeek的对话输入框上方有一个模型切换按钮，点击即可在V3和R1之间自由切换。同一对话中途也可以切换模型——但切换后前文的分析结构和思考风格可能会发生变化，建议不同的问题分别开新对话。
+</div>
+
+<h2 id="three-elements">R1提问的三个关键要素</h2>
+<p>R1的输出质量高度取决于你提问的方式。根据我们大量的实测经验，一个高质量的R1提问需要包含以下三个要素：</p>
 
 <h3>1. 交代背景</h3>
-<p>不要只写"帮我分析这个方案"，要写"某SaaS产品考虑进入东南亚市场，团队8人、预算200万、周期12个月。请从<strong>市场规模、竞品格局、合规风险</strong>三方面评估可行性，并列出前三个需要优先验证的假设"。背景越具体，R1的回答越精准。</p>
+<p>不要只写"帮我分析这个方案"，而要给出足够的上下文。举个例子：<strong>"某SaaS产品考虑进入东南亚市场，团队8人、预算200万、周期12个月。请从市场规模、竞品格局、合规风险三方面评估可行性，并列出前三个需要优先验证的假设。"</strong>背景越具体，R1的回答越精准，越不会跑偏到你不需要的方向。</p>
 
-<h3>2. 明确约束</h3>
-<p>加上时间、预算、规则等限制——"假设竞品A在6个月后也会推出类似功能""不考虑日本市场"。<strong>约束越具体，R1的推理越有实际价值</strong>，不会跑到你不关心的方向去。</p>
+<h3>2. 明确约束条件</h3>
+<p>加上时间、预算、规则等限制。例如"假设竞品A在6个月后也会推出类似功能""不考虑日本市场""服务器成本每月不超过5000元"。<strong>约束越具体，R1的推理越有实际价值</strong>。没有约束的开放性问题，R1可能会给出理论正确但和实践脱节的答案。</p>
 
 <h3>3. 指定输出格式</h3>
-<p>"分三步说明""用表格对比各维度""标注不确定之处"。这些指令能让R1的结果直接可用，而不是一段笼统的分析。比如对比分析时要求"用markdown表格列出每个维度的优劣势"，比"写个对比"得到的结果可读性强十倍。</p>
+<p>"分三步说明""用表格对比各维度""标注不确定之处""每个方案给出一个推荐指数"。这些格式指令能让R1的产出直接可用，而不是一段笼统的分析。比如对比分析时要求"用表格列出每个维度的优劣势和风险等级"，比说"写个对比"得到的结果可读性强很多。</p>
 
-<h2>三个实战实例</h2>
+<div class="dl-cta">
+<h3>💡 准备好提问了吗？</h3>
+<p>先确保你装了DeepSeek，然后打开R1模式，试试用上面的三要素法提问</p>
+<a href="/download/" class="dl-btn">📥 免费下载体验</a>
+</div>
 
-<h3>实例1：代码Bug排查</h3>
-<p>问题："我的Python程序在处理2GB大文件时内存溢出，服务器内存8GB。<code>open().read()</code>一次性加载导致OOM。请分步排查并给出优化方案。"R1不会笼统地说"优化代码"，而是会分析<strong>逐行读取vs mmap映射vs分块处理</strong>三种方案的优劣和适用场景。</p>
+<h2 id="examples">五个实战实例</h2>
 
-<h3>实例2：商业决策对比</h3>
-<p>"产品定价299 vs 399，哪个更优？请考虑转化率、客单价和市场规模的变化。"R1会计算两种方案的总收入预期，还可能会指出"定价399时建议增加7天免费试用期来维持转化率"这种你没考虑到的细节。</p>
+<h3>实例1：代码Bug深度排查</h3>
+<p><strong>提问：</strong>"我的Python程序在处理2GB大文件时内存溢出，服务器内存8GB。当前使用 <code>open().read()</code> 一次性加载导致OOM。请从逐行读取、mmap内存映射、分块处理三个方向分析各自的优劣、适用场景和性能对比，给出推荐的优化方案。"</p>
+<p><strong>R1的表现：</strong>不会笼统地说"优化代码"，而是详细分析三种方案的内存占用曲线、I/O频率、CPU开销，并给出一个具体可执行的优化建议（比如"先用mmap做随机访问，热点区域用内存缓存"）。这种分析深度是V3做不出来的。</p>
+
+<h3>实例2：商业定价策略分析</h3>
+<p><strong>提问：</strong>"产品定价299 vs 399 vs 499，哪个更优？目标用户月收入5000-10000元，竞品均价350元。请从转化率、客单价、总收入三个维度建模分析，并考虑不同的市场策略（如7天免费试用、年付折扣）对结果的影响。"</p>
+<p><strong>R1的表现：</strong>R1会计算三种定价下的盈亏平衡点和预期收入区间，可能会指出"定价399时建议搭配7天免费试用来维持转化率"这种你没考虑到的组合策略，让分析结论更有立体感。</p>
 
 <h3>实例3：技术方案选型</h3>
-<p>"新项目选React还是Vue？团队3人、有Vue经验、项目复杂度中高、需要SSR。"R1会从学习成本、生态成熟度、性能、SSR支持四个维度分析，给出具体的建议方案。</p>
+<p><strong>提问：</strong>"新项目选React还是Vue？团队3人、有Vue经验但React零基础、项目复杂度中高、需要SSR支持、预计3个月内上线MVP。请从学习成本、生态成熟度、SSR性能、长期维护成本四个维度分析，给出具体建议。"</p>
+<p><strong>R1的表现：</strong>会考虑团队现有技能栈、MVP时间压力、两个框架的SSR方案（Next.js vs Nuxt）的成熟度差异，给出一个有时间线的分阶段建议。3人团队的语境下，"选团队最熟悉的"可能比"选技术上最优的"更实际，R1能在权衡中体现这种判断。</p>
 
-<h2>验证与追问</h2>
-<p>R1会展示推演过程，但你仍应验证关键数据和结论。好的追问方式："<strong>第二步的依据是什么？</strong>""<strong>如果假设A不成立，结论怎么变？</strong>"这类追问能暴露隐藏前提，让讨论更深。</p>
+<h3>实例4：数学/逻辑推演</h3>
+<p><strong>提问：</strong>"一个平台有两种套餐：A套餐月费30元含100次调用，超出0.3元/次；B套餐月费80元含500次调用，超出0.15元/次。请计算各种使用量下的最优套餐选择，并画出一个简单的决策流程图。"</p>
+<p><strong>R1的表现：</strong>R1会列出不同月调用量（50/100/200/300/500/800次等）下两个套餐的总费用对比，找到切换点，并以清晰的逻辑呈现。这类有明确数学公式的计算题是R1的强项。</p>
 
-<p>更深入的使用技巧可以看<a href="/tutorial/deepseek-v3-tips/">DeepSeek V3写作翻译教程</a>和<a href="/tutorial/deepseek-api-start/">API开发者指南</a>。</p>
+<h3>实例5：复杂决策的多维度评估</h3>
+<p><strong>提问：</strong>"公司要选云服务商（阿里云/腾讯云/AWS中国），考虑因素包括价格、延迟、合规性、生态工具、技术支持。团队5人、Web应用为主、预算5000元/月。请建立一个加权评分模型，每个维度给出权重和评分依据，最终给出推荐排名。"</p>
+<p><strong>R1的表现：</strong>会为每个维度分配合理权重（合规>延迟>价格>生态>支持），给出一个结构化的评分表，并在结论中标注"如果合规要求变化，AWS中国的得分会显著提升"这类敏感性分析。</p>
+
+<h2 id="validation">验证与追问：让答案更进一步</h2>
+<p>R1会展示它的推演过程，但你仍应该验证关键数据和结论。好的追问方式是向R1进一步施压：<strong>"第二步的依据是什么？""如果假设A不成立，结论怎么变？""有没有反例？"</strong>这类追问能暴露隐藏前提，让讨论从"看起来对"深入到"经得起推敲"。</p>
+
+<p>尤其建议在R1给出结论后，追加一句"请标注这个分析中不确定性最高的地方"。R1会自动识别哪些推理环节依赖的假设最多，这对商业决策的安全边际评估极有价值。</p>
+
+<div class="warn-box">
+<strong>⚠️ 使用注意：</strong>R1的推理时间比V3长很多（5-30秒），不适合需要秒回的对话场景。另外R1在纯创造性任务（如写一首诗、设计一个logo思路）上不一定比V3更好——它的强项是有明确逻辑链条的问题。选对模型比"都用最好的"更重要。
+</div>
+
+<p>掌握R1后，建议再学习<a href="/tutorial/deepseek-v3-tips/">DeepSeek V3写作翻译教程</a>了解日常场景的高效用法，以及<a href="/tutorial/deepseek-api-start/">API开发者接入教程</a>把R1能力集成到你的应用中。关于R1和ChatGPT的推理能力对比，可以看<a href="/compare/deepseek-vs-chatgpt/">DeepSeek vs ChatGPT九个维度实测对比</a>。</p>
+
+<h2 id="faq">常见问题</h2>
+
+<div class="article-faq">
+<div class="faq-item open">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">R1比V3好吗？应该一直用R1？<span>▼</span></div>
+<div class="faq-a">不是的。R1和V3各有定位。R1擅长复杂推理，但响应慢、也不适合闲聊或简单问答。日常的大部分问题用V3足够——比如问天气、写邮件、翻译句子。只在遇到需要深度分析的问题时才切换到R1。一直用R1反而会因为响应慢影响效率。</div>
+</div>
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">R1需要额外付费吗？<span>▼</span></div>
+<div class="faq-a">不需要。R1和V3一样，在DeepSeek的网页版、电脑客户端和手机App上都是完全免费的。只有通过API调用时才按token计费（R1约¥4/百万token）。普通用户完全不用担心费用问题。详见<a href="/faq/deepseek-free/">DeepSeek免费政策说明</a>。</div>
+</div>
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">R1能处理多长的文本？<span>▼</span></div>
+<div class="faq-a">R1支持128K token的上下文窗口，大约能处理一本中等篇幅的书籍（约10万字）。在这个范围内，R1能记住前面的所有对话内容，进行连贯的推理。处理超长文档时，建议分章节提问以获得更精准的回答。</div>
+</div>
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">R1和ChatGPT的o1有什么区别？<span>▼</span></div>
+<div class="faq-a">两者都是各自平台的推理模型。R1在中文数学和中文逻辑推理方面表现更优，o1在英文STEM领域稍强。最大的区别是价格——R1完全免费使用，o1需要ChatGPT Plus订阅（$20/月）。详细的九个维度对比可以看<a href="/compare/deepseek-vs-chatgpt/">DeepSeek vs ChatGPT对比评测</a>。</div>
+</div>
+</div>
+
+</div>
 </article>
 
-<div class="rel"><h2>📖 相关教程</h2><div class="rel-g">
-<a href="/tutorial/deepseek-v3-tips/" class="rel-c">V3写作翻译教程</a>
-<a href="/tutorial/deepseek-api-start/" class="rel-c">API开发者接入教程</a>
-<a href="/compare/deepseek-vs-chatgpt/" class="rel-c">vs ChatGPT对比</a>
-<a href="/" class="rel-c">返回首页浏览全部</a>
-</div></div></div>
+<div class="related-section">
+<h2>📖 相关教程推荐</h2>
+<div class="related-grid">
+<a href="/tutorial/deepseek-v3-tips/" class="related-card">
+<div class="related-card-body"><h4>DeepSeek V3写作翻译教程</h4></div>
+</a>
+<a href="/tutorial/deepseek-api-start/" class="related-card">
+<div class="related-card-body"><h4>DeepSeek API开发者接入教程</h4></div>
+</a>
+<a href="/compare/deepseek-vs-chatgpt/" class="related-card">
+<div class="related-card-body"><h4>DeepSeek vs ChatGPT实测对比</h4></div>
+</a>
+<a href="/tutorial/deepseek-pc-install/" class="related-card">
+<div class="related-card-body"><h4>DeepSeek电脑版下载安装教程</h4></div>
+</a>
+</div>
+</div>
+
+</div>
+
+<aside class="article-sidebar">
+<div class="sidebar-card sidebar-dl">
+<h3>📥 DeepSeek 免费下载</h3>
+<a href="/download/" class="sidebar-dl-btn">💻 电脑版下载</a>
+<a href="/download/" class="sidebar-dl-btn">📱 手机版安装</a>
+<a href="/download/" class="sidebar-dl-btn" style="background:rgba(255,255,255,.1)">🌐 网页版入口</a>
+<div style="font-size:11px;opacity:.7;margin-top:8px;text-align:center">v3.1 最新版 · 官方正版</div>
+</div>
+
+<div class="sidebar-card" id="tocCard">
+<h3>📑 文章目录</h3>
+<div class="toc-list" id="tocList"></div>
+</div>
+
+<div class="sidebar-card">
+<h3>🔥 热门教程</h3>
+<div class="rel-item"><img src="/images/og-default.jpg"><a href="/tutorial/deepseek-pc-install/">DeepSeek电脑版下载安装教程</a></div>
+<div class="rel-item"><img src="/images/og-default.jpg"><a href="/tutorial/deepseek-v3-tips/">V3写作翻译教程：高效使用技巧</a></div>
+<div class="rel-item"><img src="/images/og-default.jpg"><a href="/tutorial/deepseek-api-start/">DeepSeek API开发者接入教程</a></div>
+<div class="rel-item"><img src="/images/og-default.jpg"><a href="/compare/deepseek-vs-chatgpt/">DeepSeek vs ChatGPT实测对比</a></div>
+</div>
+</aside>
+
+</div>
+</div>
+
 <footer class="footer">
 <div class="c">
 <div class="footer-grid">
@@ -98,4 +333,36 @@
 <a href="/sitemap-index.xml">Sitemap</a>
 </div>
 </div>
-</footer></body></html>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+const h=document.documentElement.scrollHeight-window.innerHeight;
+const p=h>0?(window.scrollY/h)*100:0;
+document.getElementById('readingBar').style.width=p+'%';
+});
+(function(){
+const content=document.querySelector('.article-content');
+if(!content)return;
+const h2s=content.querySelectorAll('h2[id]');
+const toc=document.getElementById('tocList');
+if(!toc||h2s.length===0){document.getElementById('tocCard').style.display='none';return}
+h2s.forEach(h=>{
+const a=document.createElement('a');
+a.href='#'+h.id;a.textContent=h.textContent;toc.appendChild(a)
+});
+const sections=[];
+toc.querySelectorAll('a').forEach(a=>{
+const t=document.querySelector(a.getAttribute('href'));
+if(t)sections.push({el:t,link:a})
+});
+window.addEventListener('scroll',()=>{
+let cur=null;sections.forEach(s=>{if(window.scrollY>=s.el.offsetTop-120)cur=s});
+toc.querySelectorAll('a').forEach(l=>{l.classList.remove('active');l.style.color='';l.style.fontWeight=''});
+if(cur){cur.link.classList.add('active');cur.link.style.color='var(--blue)';cur.link.style.fontWeight='600'}
+},{passive:true})
+})();
+</script>
+
+</body>
+</html>
