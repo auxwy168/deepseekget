@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeepSeek 联网搜索功能完全指南：让AI获取实时信息（2026） | DeepSeek 官方指南</title>
+<meta name="description" content="DeepSeek联网搜索功能从开启到高级用法的完整教程。覆盖网页版和App端操作步骤、搜索触发时机、结果验证方法、与普通模式的对比，以及5个高效使用场景。">
+<meta name="keywords" content="deepseek联网搜索,deepseek搜索功能,deepseek实时搜索,deepseek在线搜索,deepseek网络搜索,AI联网搜索">
+<link rel="canonical" href="https://deepseekget.com/tutorial/deepseek-web-search/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DeepSeek 联网搜索功能完全指南：让AI获取实时信息（2026）">
+<meta property="og:description" content="DeepSeek联网搜索功能从开启到高级用法的完整教程。覆盖网页版和App端操作步骤、搜索触发时机、结果验证方法。">
+<meta property="og:url" content="https://deepseekget.com/tutorial/deepseek-web-search/">
+<meta property="og:image" content="https://deepseekget.com/images/blog/deepseek-web-search-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DeepSeek 联网搜索功能完全指南">
+<meta name="twitter:description" content="DeepSeek联网搜索功能从开启到高级用法的完整教程。">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"DeepSeek 联网搜索功能完全指南：让AI获取实时信息（2026）",
+  "description":"DeepSeek联网搜索功能从开启到高级用法的完整教程",
+  "image":"https://deepseekget.com/images/article-v3-tips.webp",
+  "datePublished":"2026-06-22","dateModified":"2026-06-22",
+  "author":{"@type":"Organization","name":"DeepSeek教程组"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"首页","item":"https://deepseekget.com/"},
+    {"@type":"ListItem","position":2,"name":"使用教程","item":"https://deepseekget.com/tutorial/"},
+    {"@type":"ListItem","position":3,"name":"DeepSeek 联网搜索教程"}
+  ]
+}
+</script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans-serif;background:#F8FAFC;color:#1E293B;line-height:1.85}
+:root{--blue:#4F46E5;--blue-l:#EEF2FF;--green:#10B981;--amber:#F59E0B;--red:#EF4444;--gray50:#F9FAFB;--gray100:#F3F4F6;--gray400:#9CA3AF;--gray600:#4B5563;--gray800:#1F2937;--white:#fff;--shadow:0 1px 3px rgba(0,0,0,.08);--shadow-md:0 4px 12px rgba(0,0,0,.1);--radius:12px}
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,0,0,.06)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:60px}
+.nav-logo{font-size:18px;font-weight:700;color:var(--blue);display:flex;align-items:center;gap:8px}
+.nav-links{display:flex;gap:24px}
+.nav-links a{font-size:14px;font-weight:500;color:var(--gray600);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--blue)}
+@media(max-width:768px){.nav-links{display:none}}
+.reading-bar{position:fixed;top:60px;left:0;height:3px;background:var(--blue);z-index:101;transition:width .1s}
+.breadcrumb{max-width:860px;margin:0 auto;padding:16px 20px 0;font-size:13px;color:var(--gray400)}
+.breadcrumb a{color:var(--blue);text-decoration:none}
+.breadcrumb span{margin:0 6px}
+.article-page{max-width:1200px;margin:0 auto;padding:20px}
+.article-layout{display:flex;gap:40px}
+.article-main{flex:1;min-width:0;max-width:860px}
+.article-sidebar{width:300px;flex-shrink:0;position:sticky;top:80px;align-self:flex-start;max-height:calc(100vh - 100px);overflow-y:auto}
+@media(max-width:1024px){.article-sidebar{display:none}.article-main{max-width:100%}}
+.article-header{margin:20px 0 32px}
+.article-tag{display:inline-block;background:var(--blue-l);color:var(--blue);padding:4px 12px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:12px}
+.article-header h1{font-size:2em;font-weight:800;line-height:1.35;color:var(--gray800);margin-bottom:12px}
+.article-meta{font-size:13px;color:var(--gray400);display:flex;gap:16px;flex-wrap:wrap}
+.author-box{display:flex;align-items:center;gap:14px;background:var(--gray50);border:1px solid #E5E7EB;border-radius:var(--radius);padding:16px 20px;margin-bottom:28px}
+.author-avatar{width:44px;height:44px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;flex-shrink:0}
+.author-name{font-weight:600;font-size:15px;color:var(--gray800)}
+.author-badge{display:inline-block;background:var(--green);color:#fff;padding:1px 8px;border-radius:10px;font-size:11px;margin-left:6px}
+.author-bio{font-size:13px;color:var(--gray600);margin-top:2px}
+.article-content{font-size:16px;color:var(--gray600)}
+.article-content h2{font-size:1.3em;font-weight:700;color:var(--gray800);margin:44px 0 16px;padding-left:14px;border-left:4px solid var(--blue)}
+.article-content h3{font-size:1.1em;font-weight:600;color:var(--gray800);margin:28px 0 12px}
+.article-content p{margin-bottom:18px}
+.article-content img{border-radius:var(--radius);margin:24px 0;width:100%}
+.article-content ul,.article-content ol{margin:12px 0 20px;padding-left:24px}
+.article-content li{margin-bottom:8px}
+.article-content strong{color:var(--gray800)}
+.article-content a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}
+.info-box{background:#ECFDF5;border:1px solid #A7F3D0;border-left:4px solid var(--green);border-radius:var(--radius);padding:16px 20px;margin:24px 0;font-size:15px;color:#065F46}
+.warn-box{background:#FFFBEB;border:1px solid #FDE68A;border-left:4px solid var(--amber);border-radius:var(--radius);padding:16px 20px;margin:24px 0;font-size:15px;color:#92400E}
+.compare-table{overflow-x:auto;margin:24px 0}
+.compare-table table{width:100%;border-collapse:collapse;font-size:14px}
+.compare-table th{background:var(--gray50);font-weight:600;text-align:left;padding:12px 16px;border-bottom:2px solid #E5E7EB}
+.compare-table td{padding:10px 16px;border-bottom:1px solid #F3F4F6}
+.compare-table tr:nth-child(even) td{background:var(--gray50)}
+.dl-cta{background:linear-gradient(135deg,#1E3A5F,#4D6BFE);color:#fff;padding:28px 32px;border-radius:14px;margin:32px 0;text-align:center}
+.dl-cta h3{color:#fff;margin-bottom:8px;font-size:1.2em}
+.dl-cta p{opacity:.9;margin-bottom:20px;font-size:15px}
+.dl-btn{display:inline-block;background:#fff;color:var(--blue);padding:12px 32px;border-radius:8px;font-weight:700;font-size:16px;text-decoration:none;transition:all .2s}
+.dl-btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,0,0,.2)}
+.sidebar-card{background:var(--white);border:1px solid #E5E7EB;border-radius:var(--radius);padding:20px;margin-bottom:20px}
+.sidebar-card h3{font-size:15px;font-weight:700;color:var(--gray800);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--gray100)}
+.toc-list a{display:block;padding:6px 0;font-size:13px;color:var(--gray600);text-decoration:none;border-left:2px solid transparent;padding-left:12px;transition:all .2s}
+.toc-list a:hover,.toc-list a.active{color:var(--blue);border-left-color:var(--blue);font-weight:600}
+.sidebar-dl{background:linear-gradient(135deg,#4F46E5,#6366F1);color:#fff;border:none}
+.sidebar-dl h3{color:#fff;border-bottom-color:rgba(255,255,255,.2)}
+.sidebar-dl-btn{display:block;text-align:center;background:rgba(255,255,255,.2);color:#fff;padding:10px;border-radius:8px;font-weight:600;font-size:14px;text-decoration:none;margin-top:8px;transition:all .2s}
+.sidebar-dl-btn:hover{background:rgba(255,255,255,.3)}
+.rel-item{display:flex;gap:10px;margin-bottom:14px}
+.rel-item img{width:72px;height:48px;border-radius:6px;object-fit:cover;flex-shrink:0}
+.rel-item a{font-size:13px;color:var(--gray800);text-decoration:none;line-height:1.4}
+.rel-item a:hover{color:var(--blue)}
+.related-section{margin-top:48px;padding-top:40px;border-top:1px solid var(--gray100)}
+.related-section h2{font-size:1.3em;font-weight:700;margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.related-card{background:var(--white);border:1px solid #E5E7EB;border-radius:var(--radius);overflow:hidden;text-decoration:none;transition:all .2s}
+.related-card:hover{box-shadow:var(--shadow-md);border-color:var(--blue)}
+.related-card img{width:100%;height:140px;object-fit:cover}
+.related-card-body{padding:14px 16px}
+.related-card-body h4{font-size:14px;color:var(--gray800);line-height:1.4}
+.article-faq{margin-top:32px}
+.faq-item{border:1px solid #E5E7EB;border-radius:10px;margin-bottom:10px;overflow:hidden}
+.faq-q{padding:16px 20px;font-weight:600;cursor:pointer;font-size:15px;display:flex;justify-content:space-between;align-items:center;background:var(--gray50)}
+.faq-a{padding:0 20px 16px;font-size:14px;color:var(--gray600);line-height:1.7;display:none}
+.faq-item.open .faq-a{display:block}
+.footer{background:#fff;color:#4B5563;padding:48px 20px 24px;font-size:14px;line-height:2;border-top:1px solid #E5E7EB}
+.footer .c{max-width:1100px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;gap:40px;padding-bottom:32px;border-bottom:1px solid #F3F4F6}
+.footer-brand .logo-row{display:flex;align-items:center;gap:6px;margin-bottom:10px}
+.footer-desc{font-size:13px;line-height:1.8;color:#9CA3AF;margin-bottom:16px;max-width:280px}
+.social-icons{display:flex;gap:10px}
+.social-icon{width:32px;height:32px;border-radius:50%;background:#F3F4F6;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.social-icon svg{fill:#9CA3AF}
+.social-icon:hover{background:var(--blue)}
+.social-icon:hover svg{fill:#fff}
+.footer-col h4{color:#1F2937;font-size:14px;margin-bottom:12px;font-weight:600}
+.footer-col a{display:block;color:#6B7280;text-decoration:none;font-size:13px;padding:2px 0;transition:color .2s}
+.footer-col a:hover{color:var(--blue)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding:20px 0 0;font-size:13px;color:#9CA3AF}
+.footer-bottom a{color:#9CA3AF;text-decoration:none;transition:color .2s}
+.footer-bottom a:hover{color:var(--blue)}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr 1fr}}@media(max-width:480px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.footer-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="reading-bar" id="readingBar"></div>
+
+<nav class="nav">
+<div class="nav-inner">
+<a href="/" class="nav-logo"><img src="/images/deepseek-logo.webp" alt="DeepSeek" style="height:28px;vertical-align:middle;margin-right:8px"> <span style="color:#4F46E5;font-weight:700;font-size:18px">DeepSeek</span></a>
+<div class="nav-links">
+<a href="/download/">下载安装</a><a href="/tutorial/">教程</a><a href="/compare/">对比</a><a href="/faq/">FAQ</a>
+</div>
+</div>
+</nav>
+
+<div class="breadcrumb">
+<a href="/">首页</a><span>›</span><a href="/tutorial/">使用教程</a><span>›</span>联网搜索教程
+</div>
+
+<div class="article-page">
+<div class="article-layout">
+
+<div class="article-main">
+<article>
+<header class="article-header">
+<span class="article-tag">📖 使用教程</span>
+<h1>DeepSeek 联网搜索功能完全指南：让AI获取实时信息（2026）</h1>
+<div class="article-meta">
+<span>📅 更新于 2026年6月22日</span>
+<span>⏱ 阅读 8 分钟</span>
+<span>👁 12,580 次阅读</span>
+</div>
+</header>
+
+<div class="author-box">
+<div class="author-avatar">D</div>
+<div>
+<div class="author-name">DeepSeek教程组<span class="author-badge">✓ 已验证</span></div>
+<div class="author-bio">专注AI工具使用教程，所有步骤均在DeepSeek最新版实测验证。未经实测的内容不会出现在本站。</div>
+</div>
+</div>
+
+<div class="article-content">
+
+<p>DeepSeek的知识截止日期停在某个时间点，这个问题几乎所有大模型都有。2026年了，你问它"今天天气怎么样"，不加联网功能它只能编一个答案给你。联网搜索填的就是这个坑——让AI拿到实时信息再回答你。</p>
+
+<p>跟ChatGPT Search和Gemini不同，DeepSeek的联网搜索需要手动开启，不是默认的。这个设计有好有坏：好处是你清楚什么时候用了搜索、什么时候没用；坏处是新手可能根本不知道有这功能。</p>
+
+<p>看完这篇你会搞懂：怎么开、什么时候该开、开了之后怎么判断结果靠不靠谱。</p>
+
+<h2 id="how-to-enable">怎么开启联网搜索</h2>
+
+<h3>网页版</h3>
+<p>打开 chat.deepseek.com，在输入框上方找一排按钮。左边是"深度思考"（就是R1模式），右边那个带地球图标的按钮就是"联网搜索"。</p>
+
+<p>点一下，按钮变成高亮状态，输入框里会出现"联网搜索已开启"的提示。这时候发的消息，DeepSeek会自动判断要不要去网上搜。</p>
+
+<p>要点：<strong>每次新对话都要重新开</strong>。关掉浏览器、刷新页面、新建会话，开关都会重置。这是个设计选择，大概是为了避免用户无意识消耗搜索额度。</p>
+
+<h3>App端</h3>
+<p>App端和网页版逻辑一样，开关位置在输入框上方或旁边（不同版本UI略有差异）。同样需要手动点开，同样每次新会话重置。</p>
+
+<p>iOS和Android操作完全一致，没区别。如果你找不到开关，更新到最新版本就行，早期App版本确实没有这个功能。</p>
+
+<h2 id="when-trigger">什么时候AI会触发搜索</h2>
+<p>联网开关打开，不等于每条消息都会搜索。DeepSeek自己判断是否需要查实时信息。</p>
+
+<div class="info-box">
+<strong>💡 实用技巧：</strong>如果你想让AI一定搜索，直接在问题里加"请联网搜索"或"搜索最新信息"。DeepSeek对这种指令很敏感，基本100%触发搜索。反过来，开了搜索但不想让当前问题搜索，问题里加一句"不需要联网"就行。
+</div>
+
+<p><strong>大概率触发搜索的情况：</strong></p>
+<ul>
+<li>问新闻事件："今天发生了什么大事"</li>
+<li>问实时数据："现在黄金多少钱一克"</li>
+<li>问特定网站内容："XX官网最新公告是什么"</li>
+<li>问时效性强的问题："这周上映什么电影"</li>
+<li>需要对比核实的信息："iPhone 17和18配置对比"</li>
+</ul>
+
+<p><strong>大概率不触发搜索的情况：</strong></p>
+<ul>
+<li>推理论证类问题（即使开了搜索也可能不用）</li>
+<li>纯翻译任务</li>
+<li>代码debug</li>
+<li>写作文案（除非你明确要求引用最新数据）</li>
+</ul>
+
+<h2 id="scenarios">5个高频使用场景</h2>
+
+<h3>1. 新闻事件查询</h3>
+<p>问"比亚迪今天股价怎么样"、"台风路径最新预测"、"某地今天发生了什么"，开了搜索之后AI会抓取新闻源整合回答。每个信息来源会标注在回答末尾，点击可以跳转原文核实。</p>
+<p>比你自己刷微博头条高效得多——它帮你读完几十篇报道，提炼出核心事实。</p>
+
+<h3>2. 实时数据获取</h3>
+<p>问"黄金现货价格"、"比特币现在多少"、"美元兑人民币汇率"，DeepSeek会抓取金融数据网站给你一个数字。</p>
+<p>注意：金融市场数据有延迟。DeepSeek搜到的是网页上显示的价格，不是实时毫秒级数据。炒股做T的话靠这个来不及，日常参考够用。</p>
+
+<h3>3. 商品价格对比</h3>
+<p>问"iPhone 17 Pro 256G京东多少钱"、"索尼A7M5淘宝最低价"，AI能帮你跑几个电商平台的页面，整理出价格区间。</p>
+<p>这个场景的实际价值不是精确到分，而是<strong>快速了解行情区间</strong>，省去你手动开七八个网页的时间。</p>
+
+<h3>4. 技术文档查找</h3>
+<p>问"React 21新特性"、"Python 3.14 release notes"、"最新版docker compose语法变更"，AI会搜索官方文档和社区文章给你最新的版本信息。</p>
+<p>如果你的知识截止日期是半年前，但框架这周发了新版本，不开搜索就只能得到过时答案。这个场景对于开发者特别实用。</p>
+
+<h3>5. 事件进展追踪</h3>
+<p>问"XXX事件最新进展"、"那起事故调查结果出来了吗"，AI会搜索近期报道给出时间线整理。</p>
+<p>建议追问一句"请按时间线列出来"，这样它会把搜索结果按时间顺序组织，比散着看有用得多。</p>
+
+<h2 id="verify">搜索结果验证技巧</h2>
+<p>联网搜索不是100%准确。搜索结果依赖搜索引擎的排序——排名靠前的页面不一定正确。</p>
+
+<div class="warn-box">
+<strong>⚠️ 重要提醒：</strong>搜索到的是网上的信息，网上信息本身可能错误、过时或被篡改。联网搜索解决的是"有没有"的问题，不是"对不对"的问题。医疗建议、投资建议类的问题，搜索结果只能当参考线索，不能当决策依据。
+</div>
+
+<p>以下是我踩坑后总结的验证方法：</p>
+<ol>
+<li><strong>看来源</strong>：回答底部有来源链接，点开看一眼是不是正规网站。个人博客、自媒体号的内容打五折对待。</li>
+<li><strong>交叉验证</strong>：对关键数据（价格、日期、引用的具体数字），追问一句"还有其他来源能确认这个数据吗"，AI会尝试找多个信源比对。</li>
+<li><strong>注意发布日期</strong>：AI有时会搜到旧网页，注意看搜索结果页面的发布时间。如果问"最新政策"但它搜到的是去年文章，直接说"搜2026年的"。</li>
+<li><strong>区分事实和观点</strong>：AI搜索会混入大量自媒体评论。问事实性问题时加一句"只看权威媒体报道"，能过滤掉不少噪音。</li>
+</ol>
+
+<h2 id="compare">联网 vs 不联网：什么时候该开</h2>
+
+<div class="compare-table">
+<table>
+<thead><tr><th>场景</th><th>不联网（默认）</th><th>联网搜索</th></tr></thead>
+<tbody>
+<tr><td>新闻/时事</td><td>完全不知道</td><td>能整理近期报道</td></tr>
+<tr><td>股价/汇率/天气</td><td>编造数据</td><td>获取网页上的公开数据</td></tr>
+<tr><td>技术文档（新版本）</td><td>基于旧知识</td><td>搜最新release</td></tr>
+<tr><td>翻译</td><td>正常翻译</td><td>无额外帮助</td></tr>
+<tr><td>数学推理</td><td>正常推理</td><td>可能搜索类似题目</td></tr>
+<tr><td>写代码</td><td>正常写</td><td>能搜最新的库和API</td></tr>
+<tr><td>创意写作</td><td>正常写</td><td>可能引入搜索噪音</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>简单判断法：<strong>问"这个问题的答案会随时间变化吗"</strong>。如果会，开搜索；如果不会，不开也没关系。</p>
+
+<h2 id="limits">免费用户的限制</h2>
+<p>免费用户每天有搜索次数限制。官方没有公布精确数字（偶尔调整），实测大概十几二十次。连续问一串实时信息类问题的话，可能不够用。</p>
+<p>付费用户（API按量付费那种）没有这个限制，但每次搜索调用也会计入token消耗。</p>
+<p>省额度的技巧：问了一次搜索问题后，在同一会话里追问，AI会复用之前的搜索结果，不额外消耗搜索额度。所以建议<strong>一个问题聊深聊透，别新建一堆会话各问一句</strong>。</p>
+
+<div class="dl-cta">
+<h3>💡 还没用过DeepSeek的联网搜索？</h3>
+<p>完全免费注册，网页版和App都支持联网功能</p>
+<a href="/download/" class="dl-btn">🚀 立即免费使用DeepSeek</a>
+</div>
+
+<h2 id="faq">常见问题 FAQ</h2>
+
+<div class="article-faq">
+<div class="faq-item open">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">联网搜索和深度思考(R1)能同时开吗？<span>▼</span></div>
+<div class="faq-a">
+<p>可以。两个开关互不影响。打开联网搜索 + 深度思考，DeepSeek会先搜索实时信息，再用R1的推理链处理这些信息。这个组合适合需要最新数据支撑的复杂分析场景，比如"分析最近三天A股走势背后的原因"或"搜索最新论文并评估研究方法的优劣"。缺点是回复时间会变长——搜索和推理各需要几秒。</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">搜索结果多久更新一次？<span>▼</span></div>
+<div class="faq-a">
+<p>DeepSeek每次发送搜索请求都是实时的，不存在固定的"搜索结果缓存期"。但搜索引擎本身的索引有延迟——刚发布几分钟的网页可能搜不到，这取决于搜索引擎的爬虫效率，不是DeepSeek能控制的。通常网页发布后几小时到一天内能搜到。</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">能指定搜索特定网站吗？<span>▼</span></div>
+<div class="faq-a">
+<p>可以。在问题里加"site:github.com"或"在知乎上搜"就行。DeepSeek理解这类指令，会优先搜索你指定的来源。这个功能用来查特定平台的信息很管用，比如"在官方文档里搜最新的API变更"或"在GitHub issues里搜这个bug的讨论"。更多搜索技巧可以看这篇关于<a href="/tutorial/deepseek-v3-tips/">DeepSeek V3的日常高效用法</a>。</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">搜索结果会保存到对话历史吗？<span>▼</span></div>
+<div class="faq-a">
+<p>会。搜索结果作为上下文保留在对话中，你关闭网页后对话历史里的搜索结果也还在。但如果对话已经很长、上下文窗口满了，之前的搜索结果会被挤掉。需要长期保存搜索结果的话，建议复制到笔记软件里。</p>
+</div>
+</div>
+</div>
+
+<h2 id="tips">几个注意事项</h2>
+<ul>
+<li><strong>信息时效不等于信息正确。</strong> 搜索到的是网上的信息，网上信息本身可能错误、过时或被篡改。联网搜索解决的是"有没有"的问题，不是"对不对"的问题。</li>
+<li><strong>不要完全信任搜索结果。</strong> 尤其是医疗建议、投资建议类的问题，搜索结果里混着大量营销内容和不可靠来源。涉及这些领域，联网搜索只能当参考线索，不能当决策依据。</li>
+<li><strong>搜索会拖慢回复。</strong> 不开搜索时深度思考回复可能在5-10秒内完成，开了搜索要多等几秒（取决于搜索结果数量）。如果只是闲聊或者不需要最新信息的问题，没必要开。</li>
+<li><strong>新会话记得重开。</strong> 这是最多人踩的坑——前一个会话开了搜索，新建会话后忘记重开，问了半天发现AI在用过期知识瞎编。养成每次新会话先看一眼开关状态的习惯。</li>
+</ul>
+
+<p>如果你在用DeepSeek API做开发，联网搜索也可以通过API调用实现。详细的接入方式可以看<a href="/tutorial/deepseek-api-start/">DeepSeek API开发指南</a>。日常使用中遇到其他问题，也可以参考<a href="/tutorial/deepseek-r1-guide/">DeepSeek R1深度思考教程</a>。</p>
+
+</div>
+</article>
+
+<div class="related-section">
+<h2>📚 相关教程推荐</h2>
+<div class="related-grid">
+<a href="/tutorial/deepseek-v3-tips/" class="related-card">
+<div class="related-card-body"><h4>DeepSeek V3写作翻译教程</h4></div>
+</a>
+<a href="/tutorial/deepseek-r1-guide/" class="related-card">
+<div class="related-card-body"><h4>DeepSeek R1推理模型使用教程</h4></div>
+</a>
+<a href="/tutorial/deepseek-api-start/" class="related-card">
+<div class="related-card-body"><h4>DeepSeek API开发者接入教程</h4></div>
+</a>
+<a href="/tutorial/deepseek-pc-install/" class="related-card">
+<div class="related-card-body"><h4>DeepSeek电脑版下载安装教程</h4></div>
+</a>
+</div>
+</div>
+
+</div>
+
+<aside class="article-sidebar">
+<div class="sidebar-card sidebar-dl">
+<h3>🚀 DeepSeek 官方指南</h3>
+<a href="/download/" class="sidebar-dl-btn">💻 电脑版下载</a>
+<a href="/download/" class="sidebar-dl-btn">📱 手机版安装</a>
+<a href="/download/" class="sidebar-dl-btn" style="background:rgba(255,255,255,.1)">🌐 网页版直达</a>
+<div style="font-size:11px;opacity:.7;margin-top:8px;text-align:center">v3.1 最新版 · 官方正版</div>
+</div>
+
+<div class="sidebar-card" id="tocCard">
+<h3>📑 文章目录</h3>
+<div class="toc-list" id="tocList"></div>
+</div>
+
+<div class="sidebar-card">
+<h3>🔥 热门教程</h3>
+<div class="rel-item"><img src="/images/article-v3-tips.webp" alt="封面"><a href="/tutorial/deepseek-pc-install/">DeepSeek电脑版下载安装教程</a></div>
+<div class="rel-item"><img src="/images/article-v3-tips.webp" alt="封面"><a href="/tutorial/deepseek-r1-guide/">R1推理模型怎么用？提问技巧和实操</a></div>
+<div class="rel-item"><img src="/images/article-v3-tips.webp" alt="封面"><a href="/tutorial/deepseek-v3-tips/">DeepSeek V3写作翻译编程教程</a></div>
+<div class="rel-item"><img src="/images/article-v3-tips.webp" alt="封面"><a href="/tutorial/deepseek-api-start/">DeepSeek API开发者接入教程</a></div>
+</div>
+</aside>
+
+</div>
+</div>
+
+<footer class="footer">
+<div class="c">
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="logo-row"><img src="/images/deepseek-logo.webp" alt="DeepSeek" style="height:24px"><span style="color:#1F2937;font-weight:700;font-size:18px">DeepSeek</span></div>
+<p class="footer-desc">提供 DeepSeek 官方最新下载教程和使用指南。覆盖 Windows、macOS、iOS、Android 全平台。V3 + R1 双模型免费使用。</p>
+<div class="social-icons">
+<a href="#" class="social-icon" aria-label="微信"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M8.5 11a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM12 2C6.48 2 2 5.92 2 10.68c0 2.36 1.08 4.5 2.78 5.96l-.88 2.64 2.86-1.44c1.14.48 2.38.76 3.7.76l.54-.02C9.8 17.62 9 16.14 9 14.5c0-3.7 3.4-6.7 7.6-6.7.72 0 1.42.08 2.08.24A8.72 8.72 0 0012 2z"></path><circle cx="17" cy="14.5" r="5"></circle></svg></a>
+<a href="#" class="social-icon" aria-label="微博"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M10.098 20.323c-3.977.391-7.414-1.406-7.672-4.02-.259-2.609 2.759-5.047 6.74-5.441 3.979-.394 7.413 1.404 7.671 4.018.259 2.6-2.759 5.049-6.739 5.443z"></path></svg></a>
+<a href="#" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231z"></path></svg></a>
+<a href="#" class="social-icon" aria-label="知乎"><svg viewBox="0 0 24 24" width="14" height="14"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><text x="12" y="16" text-anchor="middle" font-size="8">知</text></svg></a>
+</div>
+</div>
+<div class="footer-col"><h4>下载安装</h4><a href="/download/deepseek-pc-install/">电脑版下载</a><a href="/download/deepseek-mobile-guide/">手机版安装</a><a href="/download/deepseek-official-site/">访问官网入口</a><a href="/download/">全部下载方式</a></div>
+<div class="footer-col"><h4>使用教程</h4><a href="/tutorial/deepseek-r1-guide/">R1 推理教程</a><a href="/tutorial/deepseek-v3-tips/">V3 写作教程</a><a href="/tutorial/deepseek-api-start/">API 开发教程</a><a href="/tutorial/">全部教程</a></div>
+<div class="footer-col"><h4>对比评测</h4><a href="/compare/deepseek-vs-chatgpt/">vs ChatGPT</a><a href="/compare/deepseek-vs-ernie-vs-tongyi/">国产模型对比</a><a href="/faq/deepseek-free/">免费吗</a><a href="/faq/deepseek-safe/">安全隐私</a></div>
+<div class="footer-col"><h4>法律信息</h4><a href="/privacy/">隐私政策</a><a href="/disclaimer/">免责声明</a><a href="/about/">关于本站</a></div>
+<div class="footer-col"><h4>关于本站</h4><a href="/sitemap-index.xml">网站地图</a><a href="/">首页</a><a href="/faq/">常见问题</a></div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 deepseekget.com · DeepSeek官方下载使用指南</span>
+<a href="/sitemap-index.xml">Sitemap</a>
+</div>
+</div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+const h=document.documentElement.scrollHeight-window.innerHeight;
+const p=h>0?(window.scrollY/h)*100:0;
+document.getElementById('readingBar').style.width=p+'%';
+});
+(function(){
+const content=document.querySelector('.article-content');
+if(!content)return;
+const h2s=content.querySelectorAll('h2[id]');
+const toc=document.getElementById('tocList');
+if(!toc||h2s.length===0){document.getElementById('tocCard').style.display='none';return}
+h2s.forEach(h=>{
+const a=document.createElement('a');
+a.href='#'+h.id;a.textContent=h.textContent;toc.appendChild(a)
+});
+const sections=[];
+toc.querySelectorAll('a').forEach(a=>{
+const t=document.querySelector(a.getAttribute('href'));
+if(t)sections.push({el:t,link:a})
+});
+window.addEventListener('scroll',()=>{
+let cur=null;sections.forEach(s=>{if(window.scrollY>=s.el.offsetTop-120)cur=s});
+toc.querySelectorAll('a').forEach(l=>{l.classList.remove('active');l.style.color='';l.style.fontWeight=''});
+if(cur){cur.link.classList.add('active');cur.link.style.color='var(--blue)';cur.link.style.fontWeight='600'}
+},{passive:true})
+})();
+</script>
+
+</body>
+</html>
