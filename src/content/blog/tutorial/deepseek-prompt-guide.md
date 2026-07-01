@@ -15,6 +15,8 @@ coverImage: "/images/article-v3-tips.webp"
 
 不是我夸张——同样的DeepSeek模型，用得好的人产出论文级别的分析报告，用不好的人只能得到"您的问题很有价值，以下是一些建议..."这种模板回复。
 
+![DeepSeek 提示词对比：左侧模糊提问得到笼统回答，右侧详细 Prompt 得到结构化完整方案](/images/deepseek-prompt-guide-1.jpg)
+
 差距在哪？提示词（Prompt）。
 
 提示词不是玄学。它是一套可以学习、可以复制、可以用结果验证的方法论。这篇文章不讲虚的，直接给你10个从实战中提炼出来的技巧，每个都配对比案例。
@@ -46,6 +48,8 @@ DeepSeek输出：一份能直接拿来执行的方案，包含暑期倒计时营
 <div class="info-box">
 <strong>核心认知：</strong>DeepSeek不会"知道你什么意思"——它只知道你写出来的是什么。你写得越模糊，它猜得越累，效果越差。把AI当成一个超级聪明但完全不了解你背景的新同事，你会发现很多沟通问题就消失了。
 </div>
+
+![DeepSeek 角色设定 Prompt 示例：Python 后端工程师角色对代码进行详细审查](/images/deepseek-prompt-guide-3.jpg)
 
 ## 技巧一：角色设定——给AI一个准确的"人设"
 
@@ -124,6 +128,8 @@ DeepSeek会生成类似这样的问题：
 你回答完这些，它再输出方案——质量直接提升一个量级。
 
 这种方法同样适用于编程场景。如果你不确定如何描述一个技术问题，可以先让DeepSeek帮你理清思路。详细的编程用法可以看<a href="/tutorial/deepseek-api-start/">DeepSeek API接入教程</a>中的实践案例。
+
+![DeepSeek 结构化输出效果：Markdown 表格格式对比 iPhone 与 Android 五大维度](/images/deepseek-prompt-guide-2.jpg)
 
 ## 技巧五：输出格式显式约束——不给格式就等着收散文
 
